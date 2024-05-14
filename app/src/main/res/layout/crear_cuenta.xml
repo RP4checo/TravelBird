@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/drawable_shape"
+  android:gravity="left|top"
+  android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="844dp"
+      android:background="@drawable/drawable_shape_1"
+      android:gravity="left|top"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/drawable_shape_2"
+        android:clipToPadding="false"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+      <ImageView
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:scaleType="centerInside" />
+      <!-- 10:231:space-view0 Depth 1, Frame 0_space_view0 space-view -->
+      <View
+          android:layout_width="0dp"
+          android:layout_height="48dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="23dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="TravelBird"
+          android:textColor="#FFFFFFFF"
+          android:textSize="18dp" />
+      <!-- 10:231:space-view1 Depth 1, Frame 0_space_view1 space-view -->
+      <View
+          android:layout_width="0dp"
+          android:layout_height="22.5dp"
+          android:layout_weight="1" />
+
+      <ImageView
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="378dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:lineHeight="27.5dp"
+        android:text="Aproveche al máximo sus \nexperiencias de viaje"
+        android:textColor="#FFFFFFFF"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="375dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:lineHeight="24dp"
+        android:text="Únase a nosotros.\n Es gratis."
+        android:textColor="#FFFFFFFF"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/drawable_shape_3"
+        android:clipToPadding="false"
+        android:gravity="left|top"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Email"
+          android:textColor="#FFABA6B0"
+          android:textSize="16dp" />
+      <!-- 10:250:space-view0 Depth 5, Frame 0_space_view0 space-view -->
+      <View
+          android:layout_width="0dp"
+          android:layout_height="24dp"
+          android:layout_weight="1" />
+
+      <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/drawable_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/drawable_shape_4"
+        android:clipToPadding="false"
+        android:gravity="left|top"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Usuario"
+          android:textColor="#FFABA6B0"
+          android:textSize="16dp" />
+      <!-- 10:262:space-view0 Depth 5, Frame 0_space_view0 space-view -->
+      <View
+          android:layout_width="0dp"
+          android:layout_height="24dp"
+          android:layout_weight="1" />
+
+      <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/drawable_image_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/drawable_shape_5"
+        android:clipToPadding="false"
+        android:gravity="left|top"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Contraseña"
+          android:textColor="#FFABA6B0"
+          android:textSize="16dp" />
+      <!-- 10:274:space-view0 Depth 5, Frame 0_space_view0 space-view -->
+      <View
+          android:layout_width="0dp"
+          android:layout_height="24dp"
+          android:layout_weight="1" />
+
+      <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/drawable_image_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/drawable_shape_6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+      <LinearLayout
+          android:layout_width="157.88dp"
+          android:layout_height="24dp"
+          android:background="@drawable/drawable_shape_7"
+          android:gravity="left|top"
+          android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="  Crear una cuenta"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="384dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:lineHeight="21dp"
+        android:text="Al continuar, acepta nuestras \nCondiciones y Política de privacidad."
+        android:textColor="#FFABA6B0"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:layout_width="390dp"
+        android:layout_height="20dp"
+        android:background="@drawable/drawable_shape_8"
+        android:scaleType="centerInside" />
+  </LinearLayout>
+</LinearLayout>

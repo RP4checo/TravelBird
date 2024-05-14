@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/container_iniciar_sesion"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/container_iniciar_sesion"
+  android:gravity="left|top"
+  android:orientation="vertical">
+
+  <LinearLayout
+      android:id="@+id/container_depth_frame1"
+      android:layout_width="match_parent"
+      android:layout_height="844dp"
+      android:background="@drawable/container_depth_frame1"
+      android:gravity="left|top"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame3"
+        android:layout_width="390dp"
+        android:layout_height="72dp"
+        android:background="@drawable/container_depth_frame3"
+        android:clipToPadding="false"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+      <ImageView
+          android:id="@+id/image_depth_frame4"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:scaleType="centerInside" />
+      <!-- 10:293:space-view0 Depth 1, Frame 0_space_view0 space-view -->
+      <View
+          android:layout_width="0dp"
+          android:layout_height="48dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/container_depth_frame7"
+          android:layout_width="wrap_content"
+          android:layout_height="23dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="TravelBird"
+          android:textColor="#FFFFFFFF"
+          android:textSize="18dp" />
+      <!-- 10:293:space-view1 Depth 1, Frame 0_space_view1 space-view -->
+      <View
+          android:layout_width="0dp"
+          android:layout_height="22.5dp"
+          android:layout_weight="1" />
+
+      <ImageView
+          android:id="@+id/container_depth_frame9"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/container_depth_frame12"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:lineHeight="27.5dp"
+        android:text="Aproveche al máximo sus experiencias de viaje"
+        android:textColor="#FFFFFFFF"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/container_depth_frame15"
+        android:layout_width="378dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:lineHeight="24dp"
+        android:text="Únase a nosotros.\n Es gratis."
+        android:textColor="#FFFFFFFF"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame20"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/container_depth_frame20"
+        android:clipToPadding="false"
+        android:gravity="left|top"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+      <TextView
+          android:id="@+id/container_depth_frame23"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Email"
+          android:textColor="#FFABA6B0"
+          android:textSize="16dp" />
+      <!-- 10:312:space-view0 Depth 5, Frame 0_space_view0 space-view -->
+      <View
+          android:layout_width="0dp"
+          android:layout_height="24dp"
+          android:layout_weight="1" />
+
+      <ImageView
+          android:id="@+id/container_depth_frame25"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/container_depth_frame25" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame32"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/container_depth_frame32"
+        android:clipToPadding="false"
+        android:gravity="left|top"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+      <TextView
+          android:id="@+id/container_depth_frame35"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Contraseña"
+          android:textColor="#FFABA6B0"
+          android:textSize="16dp" />
+      <!-- 10:324:space-view0 Depth 5, Frame 0_space_view0 space-view -->
+      <View
+          android:layout_width="0dp"
+          android:layout_height="24dp"
+          android:layout_weight="1" />
+
+      <ImageView
+          android:id="@+id/container_depth_frame37"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/container_depth_frame37" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame41"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/container_depth_frame41"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame44"
+          android:layout_width="157.88dp"
+          android:layout_height="24dp"
+          android:background="@drawable/container_depth_frame44"
+          android:gravity="left|top"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_iniciar_sesion"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="         Iniciar sesión"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/container_depth_frame47"
+        android:layout_width="378dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:lineHeight="21dp"
+        android:text="Al continuar, acepta nuestras \nCondiciones y Política de privacidad."
+        android:textColor="#FFABA6B0"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/container_depth_frame50"
+        android:layout_width="378dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:lineHeight="21dp"
+        android:text="¿No tiene cuenta?"
+        android:textColor="#FFABA6B0"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/container_depth_frame53"
+        android:layout_width="377dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:lineHeight="21dp"
+        android:text="Crear una cuenta"
+        android:textColor="#FF8A5CB2"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/image_depth_frame55"
+        android:layout_width="390dp"
+        android:layout_height="20dp"
+        android:background="@drawable/image_depth_frame55"
+        android:scaleType="centerInside" />
+  </LinearLayout>
+</LinearLayout>

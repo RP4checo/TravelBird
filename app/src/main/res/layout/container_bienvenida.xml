@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/container_bienvenida"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/container_bienvenida"
+  android:gravity="left|top"
+  android:orientation="vertical">
+
+  <LinearLayout
+      android:id="@+id/container_depth_frame2"
+      android:layout_width="match_parent"
+      android:layout_height="860dp"
+      android:background="@drawable/container_depth_frame2"
+      android:gravity="left|top"
+      android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/container_depth_frame4"
+        android:layout_width="390dp"
+        android:layout_height="320dp"
+        android:background="@drawable/container_depth_frame4">
+
+      <ImageView
+          android:id="@+id/image_depth_frame1"
+          android:layout_width="wrap_content"
+          android:layout_height="320dp"
+          android:layout_gravity="top|left"
+          android:scaleType="centerInside"
+          android:src="@drawable/image_depth_frame1" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/container_depth_frame1"
+        android:layout_width="378dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:lineHeight="40dp"
+        android:text="TravelBird"
+        android:textColor="#FFFFFFFF"
+        android:textSize="32dp" />
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame6"
+        android:layout_width="381dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/container_depth_frame6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame9"
+          android:layout_width="73.55dp"
+          android:layout_height="24dp"
+          android:background="@drawable/container_depth_frame9"
+          android:gravity="left|top"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="INICIAR"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_depth_frame"
+        android:layout_width="390dp"
+        android:layout_height="20dp"
+        android:background="@drawable/image_depth_frame"
+        android:scaleType="centerInside" />
+  </LinearLayout>
+</LinearLayout>
