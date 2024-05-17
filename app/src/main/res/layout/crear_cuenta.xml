@@ -6,21 +6,21 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="@drawable/drawable_shape"
+  android:background="@drawable/frame3"
   android:gravity="left|top"
   android:orientation="vertical">
 
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="844dp"
-      android:background="@drawable/drawable_shape_1"
+      android:background="@drawable/frame"
       android:gravity="left|top"
       android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="390dp"
         android:layout_height="72dp"
-        android:background="@drawable/drawable_shape_2"
+        android:background="@drawable/frame"
         android:clipToPadding="false"
         android:gravity="left|center_vertical"
         android:orientation="horizontal"
@@ -29,41 +29,25 @@
         android:paddingRight="16dp"
         android:paddingBottom="8dp">
 
-      <ImageView
-          android:layout_width="48dp"
-          android:layout_height="48dp"
-          android:scaleType="centerInside" />
       <!-- 10:231:space-view0 Depth 1, Frame 0_space_view0 space-view -->
-      <View
-          android:layout_width="0dp"
-          android:layout_height="48dp"
-          android:layout_weight="1" />
 
       <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="23dp"
-          android:gravity="left|center_vertical"
+          android:layout_width="371dp"
+          android:layout_height="32dp"
+          android:gravity="center_horizontal|top"
           android:includeFontPadding="false"
           android:maxLines="1"
           android:singleLine="true"
           android:text="TravelBird"
           android:textColor="#FFFFFFFF"
-          android:textSize="18dp" />
+          android:textSize="22dp" />
       <!-- 10:231:space-view1 Depth 1, Frame 0_space_view1 space-view -->
-      <View
-          android:layout_width="0dp"
-          android:layout_height="22.5dp"
-          android:layout_weight="1" />
 
-      <ImageView
-          android:layout_width="48dp"
-          android:layout_height="48dp"
-          android:scaleType="centerInside" />
     </LinearLayout>
 
     <TextView
-        android:layout_width="378dp"
-        android:layout_height="78dp"
+        android:layout_width="389dp"
+        android:layout_height="87dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="16dp"
@@ -76,7 +60,7 @@
         android:textSize="22dp" />
 
     <TextView
-        android:layout_width="375dp"
+        android:layout_width="389dp"
         android:layout_height="52dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="4dp"
@@ -96,7 +80,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/drawable_shape_3"
+        android:background="@drawable/frame1"
         android:clipToPadding="false"
         android:gravity="left|top"
         android:orientation="horizontal"
@@ -125,7 +109,7 @@
           android:layout_width="24dp"
           android:layout_height="24dp"
           android:scaleType="centerInside"
-          android:src="@drawable/drawable_image" />
+          android:src="@drawable/icon_link" />
     </LinearLayout>
 
     <LinearLayout
@@ -135,7 +119,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/drawable_shape_4"
+        android:background="@drawable/frame1"
         android:clipToPadding="false"
         android:gravity="left|top"
         android:orientation="horizontal"
@@ -164,7 +148,7 @@
           android:layout_width="24dp"
           android:layout_height="24dp"
           android:scaleType="centerInside"
-          android:src="@drawable/drawable_image_1" />
+          android:src="@drawable/icon_link" />
     </LinearLayout>
 
     <LinearLayout
@@ -174,7 +158,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/drawable_shape_5"
+        android:background="@drawable/frame1"
         android:clipToPadding="false"
         android:gravity="left|top"
         android:orientation="horizontal"
@@ -203,17 +187,17 @@
           android:layout_width="24dp"
           android:layout_height="24dp"
           android:scaleType="centerInside"
-          android:src="@drawable/drawable_image_2" />
+          android:src="@drawable/icon_key" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="384dp"
+        android:layout_width="379dp"
         android:layout_height="48dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/drawable_shape_6"
+        android:background="@drawable/frame2"
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingLeft="20dp"
@@ -222,7 +206,7 @@
       <LinearLayout
           android:layout_width="157.88dp"
           android:layout_height="24dp"
-          android:background="@drawable/drawable_shape_7"
+          android:background="@drawable/frame2"
           android:gravity="left|top"
           android:orientation="vertical">
 
@@ -240,8 +224,8 @@
     </LinearLayout>
 
     <TextView
-        android:layout_width="384dp"
-        android:layout_height="85dp"
+        android:layout_width="376dp"
+        android:layout_height="58dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="4dp"
         android:layout_marginRight="16dp"
@@ -253,10 +237,5 @@
         android:textColor="#FFABA6B0"
         android:textSize="14dp" />
 
-    <ImageView
-        android:layout_width="390dp"
-        android:layout_height="20dp"
-        android:background="@drawable/drawable_shape_8"
-        android:scaleType="centerInside" />
   </LinearLayout>
 </LinearLayout>

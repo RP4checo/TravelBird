@@ -7,7 +7,7 @@
   android:id="@+id/container_iniciar_sesion"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="@drawable/container_iniciar_sesion"
+  android:background="@drawable/frame"
   android:gravity="left|top"
   android:orientation="vertical">
 
@@ -15,15 +15,15 @@
       android:id="@+id/container_depth_frame1"
       android:layout_width="match_parent"
       android:layout_height="844dp"
-      android:background="@drawable/container_depth_frame1"
+      android:background="@drawable/frame"
       android:gravity="left|top"
       android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/container_depth_frame3"
-        android:layout_width="390dp"
+        android:id="@+id/container_depth_frame2"
+        android:layout_width="match_parent"
         android:layout_height="72dp"
-        android:background="@drawable/container_depth_frame3"
+        android:background="@drawable/frame"
         android:clipToPadding="false"
         android:gravity="left|center_vertical"
         android:orientation="horizontal"
@@ -32,39 +32,20 @@
         android:paddingRight="16dp"
         android:paddingBottom="8dp">
 
-      <ImageView
-          android:id="@+id/image_depth_frame4"
-          android:layout_width="48dp"
-          android:layout_height="48dp"
-          android:scaleType="centerInside" />
-      <!-- 10:293:space-view0 Depth 1, Frame 0_space_view0 space-view -->
-      <View
-          android:layout_width="0dp"
-          android:layout_height="48dp"
-          android:layout_weight="1" />
-
       <TextView
-          android:id="@+id/container_depth_frame7"
-          android:layout_width="wrap_content"
-          android:layout_height="23dp"
-          android:gravity="left|center_vertical"
+          android:id="@+id/container_depth_frame3"
+          android:layout_width="377dp"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal|top"
           android:includeFontPadding="false"
           android:maxLines="1"
           android:singleLine="true"
           android:text="TravelBird"
           android:textColor="#FFFFFFFF"
-          android:textSize="18dp" />
+          android:textSize="22dp" />
       <!-- 10:293:space-view1 Depth 1, Frame 0_space_view1 space-view -->
-      <View
-          android:layout_width="0dp"
-          android:layout_height="22.5dp"
-          android:layout_weight="1" />
 
-      <ImageView
-          android:id="@+id/container_depth_frame9"
-          android:layout_width="48dp"
-          android:layout_height="48dp"
-          android:scaleType="centerInside" />
+
     </LinearLayout>
 
     <TextView
@@ -105,7 +86,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/container_depth_frame20"
+        android:background="@drawable/frame1"
         android:clipToPadding="false"
         android:gravity="left|top"
         android:orientation="horizontal"
@@ -132,11 +113,11 @@
           android:layout_weight="1" />
 
       <ImageView
-          android:id="@+id/container_depth_frame25"
+          android:id="@+id/link_icon_container"
           android:layout_width="24dp"
           android:layout_height="24dp"
           android:scaleType="centerInside"
-          android:src="@drawable/container_depth_frame25" />
+          android:src="@drawable/icon_link" />
     </LinearLayout>
 
     <LinearLayout
@@ -147,7 +128,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/container_depth_frame32"
+        android:background="@drawable/frame1"
         android:clipToPadding="false"
         android:gravity="left|top"
         android:orientation="horizontal"
@@ -174,32 +155,32 @@
           android:layout_weight="1" />
 
       <ImageView
-          android:id="@+id/container_depth_frame37"
+          android:id="@+id/key_icon_container"
           android:layout_width="24dp"
           android:layout_height="24dp"
           android:scaleType="centerInside"
-          android:src="@drawable/container_depth_frame37" />
+          android:src="@drawable/icon_key" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/container_depth_frame41"
+        android:id="@+id/container_depth_frame4"
         android:layout_width="377dp"
         android:layout_height="48dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/container_depth_frame41"
+        android:background="@drawable/frame2"
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
 
       <LinearLayout
-          android:id="@+id/container_depth_frame44"
+          android:id="@+id/container_depth_frame5"
           android:layout_width="157.88dp"
           android:layout_height="24dp"
-          android:background="@drawable/container_depth_frame44"
+          android:background="@drawable/frame2"
           android:gravity="left|top"
           android:orientation="vertical">
 
@@ -218,7 +199,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/container_depth_frame47"
+        android:id="@+id/container_depth_frame6"
         android:layout_width="378dp"
         android:layout_height="58dp"
         android:layout_marginLeft="16dp"
@@ -262,11 +243,6 @@
         android:textColor="#FF8A5CB2"
         android:textSize="14dp" />
 
-    <ImageView
-        android:id="@+id/image_depth_frame55"
-        android:layout_width="390dp"
-        android:layout_height="20dp"
-        android:background="@drawable/image_depth_frame55"
-        android:scaleType="centerInside" />
+
   </LinearLayout>
 </LinearLayout>

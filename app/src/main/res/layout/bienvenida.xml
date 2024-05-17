@@ -7,7 +7,7 @@
   android:id="@+id/container_bienvenida"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="@drawable/container_bienvenida"
+  android:background="@drawable/frame"
   android:gravity="left|top"
   android:orientation="vertical">
 
@@ -15,23 +15,23 @@
       android:id="@+id/container_depth_frame2"
       android:layout_width="match_parent"
       android:layout_height="860dp"
-      android:background="@drawable/container_depth_frame2"
+      android:background="@drawable/frame"
       android:gravity="left|top"
       android:orientation="vertical">
 
     <FrameLayout
-        android:id="@+id/container_depth_frame4"
+        android:id="@+id/container_depth_frame7"
         android:layout_width="390dp"
         android:layout_height="320dp"
-        android:background="@drawable/container_depth_frame4">
+        android:background="@drawable/frame">
 
       <ImageView
           android:id="@+id/image_depth_frame1"
-          android:layout_width="wrap_content"
+          android:layout_width="413dp"
           android:layout_height="320dp"
           android:layout_gravity="top|left"
           android:scaleType="centerInside"
-          android:src="@drawable/image_depth_frame1" />
+          android:src="@drawable/pic_welcome" />
     </FrameLayout>
 
     <TextView
@@ -57,7 +57,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/container_depth_frame6"
+        android:background="@drawable/frame2"
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingLeft="20dp"
@@ -67,7 +67,7 @@
           android:id="@+id/container_depth_frame9"
           android:layout_width="73.55dp"
           android:layout_height="24dp"
-          android:background="@drawable/container_depth_frame9"
+          android:background="@drawable/frame2"
           android:gravity="left|top"
           android:orientation="vertical">
 
@@ -85,11 +85,5 @@
       </LinearLayout>
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/image_depth_frame"
-        android:layout_width="390dp"
-        android:layout_height="20dp"
-        android:background="@drawable/image_depth_frame"
-        android:scaleType="centerInside" />
   </LinearLayout>
 </LinearLayout>

@@ -7,7 +7,7 @@
     <attr name="bottomLeftRadius" format="dimension" />
     <attr name="bottomRightRadius" format="dimension" />
 
-    <declare-styleable name="CodiaRoundImageView">
+    <declare-styleable name="RoundImageView">
         <attr name="radius" />
         <attr name="topLeftRadius" />
         <attr name="topRightRadius" />
@@ -15,7 +15,7 @@
         <attr name="bottomRightRadius" />
     </declare-styleable>
 
-    <declare-styleable name="CodiaRoundFlexboxLayout">
+    <declare-styleable name="RoundFlexboxLayout">
         <attr name="radius" />
         <attr name="topLeftRadius" />
         <attr name="topRightRadius" />
@@ -23,7 +23,7 @@
         <attr name="bottomRightRadius" />
     </declare-styleable>
 
-    <declare-styleable name="CodiaRoundFrameLayout">
+    <declare-styleable name="RoundFrameLayout">
         <attr name="widthHeightRadio" format="dimension" />
         <attr name="cornerRadius" format="dimension" />
         <attr name="topLeftRadius" />
