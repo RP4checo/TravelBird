@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="1180dp"
+  android:background="@drawable/frame3"
+  android:gravity="left|top"
+  android:orientation="vertical">
+  
+  <LinearLayout
+    android:layout_width="390dp"
+    android:layout_height="1180dp"
+    android:background="@drawable/frame"
+    android:gravity="left|top"
+    android:orientation="vertical">
+    
+    <LinearLayout
+      android:layout_width="358dp"
+      android:layout_height="48dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginTop="12dp"
+      android:layout_marginBottom="12dp"
+      android:background="@drawable/frame1"
+      android:clipToPadding="false"
+      android:gravity="left|center_vertical"
+      android:orientation="horizontal"
+      android:paddingBottom="12dp"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:paddingTop="12dp">
+      
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_lupa" />
+      
+      <TextView
+        android:id="@+id/text_proximo_destino"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="¿Cuál será tu próximo destino?"
+        android:textColor="#FFABA6B0"
+        android:textSize="16dp" />
+    </LinearLayout>
+    
+    <TextView
+      android:id="@+id/text_explorar_destinos"
+      android:layout_width="wrap_content"
+      android:layout_height="59.5dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="11.5dp"
+      android:gravity="left|top"
+      android:includeFontPadding="false"
+      android:lineHeight="27.5dp"
+      android:text="Explorar Destinos"
+      android:textColor="#FFFFFFFF"
+      android:textSize="22dp" />
+    
+    <FrameLayout
+      android:layout_width="390dp"
+      android:layout_height="939dp">
+      
+      <LinearLayout
+        android:layout_width="173dp"
+        android:layout_height="221dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|top"
+        android:orientation="vertical">
+        
+        <ImageView
+          android:id="@+id/image_depth_frame1"
+          android:layout_width="173dp"
+          android:layout_height="173dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/pic_paris" />
+        
+        <TextView
+          android:id="@+id/text_paris"
+          android:layout_width="173dp"
+          android:layout_height="36dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
+          android:gravity="left|top"
+          android:includeFontPadding="false"
+          android:lineHeight="24dp"
+          android:text="París"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+      </LinearLayout>
+      
+      <LinearLayout
+        android:layout_width="173dp"
+        android:layout_height="221dp"
+        android:layout_marginLeft="201dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|top"
+        android:orientation="vertical">
+        
+        <ImageView
+          android:id="@+id/image_depth_frame2"
+          android:layout_width="173dp"
+          android:layout_height="173dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/pic_tokio" />
+        
+        <TextView
+          android:id="@+id/text_tokio"
+          android:layout_width="173dp"
+          android:layout_height="36dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
+          android:gravity="left|top"
+          android:includeFontPadding="false"
+          android:lineHeight="24dp"
+          android:text="Tokio"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+      </LinearLayout>
+      
+      <LinearLayout
+        android:layout_width="173dp"
+        android:layout_height="221dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="249dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|top"
+        android:orientation="vertical">
+        
+        <ImageView
+          android:id="@+id/image_depth_frame3"
+          android:layout_width="173dp"
+          android:layout_height="173dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/pic_londres" />
+        
+        <TextView
+          android:id="@+id/text_londres"
+          android:layout_width="173dp"
+          android:layout_height="36dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
+          android:gravity="left|top"
+          android:includeFontPadding="false"
+          android:lineHeight="24dp"
+          android:text="Londres"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+      </LinearLayout>
+      
+      <LinearLayout
+        android:layout_width="173dp"
+        android:layout_height="221dp"
+        android:layout_marginLeft="201dp"
+        android:layout_marginTop="249dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|top"
+        android:orientation="vertical">
+        
+        <ImageView
+          android:id="@+id/image_depth_frame4"
+          android:layout_width="173dp"
+          android:layout_height="173dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/pic_ny" />
+        
+        <TextView
+          android:id="@+id/text_nueva_york"
+          android:layout_width="173dp"
+          android:layout_height="36dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
+          android:gravity="left|top"
+          android:includeFontPadding="false"
+          android:lineHeight="24dp"
+          android:text="Nueva York"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+      </LinearLayout>
+      
+      <LinearLayout
+        android:layout_width="173dp"
+        android:layout_height="221dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="482dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|top"
+        android:orientation="vertical">
+        
+        <ImageView
+          android:id="@+id/image_depth_frame5"
+          android:layout_width="173dp"
+          android:layout_height="173dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/pic_la" />
+        
+        <TextView
+          android:id="@+id/text_los_angeles"
+          android:layout_width="173dp"
+          android:layout_height="36dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
+          android:gravity="left|top"
+          android:includeFontPadding="false"
+          android:lineHeight="24dp"
+          android:text="Los Angeles"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+      </LinearLayout>
+      
+      <LinearLayout
+        android:layout_width="173dp"
+        android:layout_height="221dp"
+        android:layout_marginLeft="201dp"
+        android:layout_marginTop="482dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|top"
+        android:orientation="vertical">
+        
+        <ImageView
+          android:id="@+id/image_depth_frame6"
+          android:layout_width="173dp"
+          android:layout_height="173dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/pic_san_fran" />
+        
+        <TextView
+          android:id="@+id/text_san_francisco"
+          android:layout_width="173dp"
+          android:layout_height="36dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
+          android:gravity="left|top"
+          android:includeFontPadding="false"
+          android:lineHeight="24dp"
+          android:text="San Francisco"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+      </LinearLayout>
+      
+      <LinearLayout
+        android:layout_width="173dp"
+        android:layout_height="221dp"
+        android:layout_marginLeft="201dp"
+        android:layout_marginTop="714.5dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|top"
+        android:orientation="vertical">
+        
+        <ImageView
+          android:id="@+id/image_depth_frame7"
+          android:layout_width="173dp"
+          android:layout_height="173dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/pic_barcelona" />
+        
+        <TextView
+          android:id="@+id/text_barcelona"
+          android:layout_width="173dp"
+          android:layout_height="36dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
+          android:gravity="left|top"
+          android:includeFontPadding="false"
+          android:lineHeight="24dp"
+          android:text="Barcelona"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+      </LinearLayout>
+      
+      <LinearLayout
+        android:layout_width="173dp"
+        android:layout_height="221dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="716.5dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|top"
+        android:orientation="vertical">
+        
+        <ImageView
+          android:id="@+id/image_depth_frame8"
+          android:layout_width="173dp"
+          android:layout_height="173dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/pic_roma" />
+        
+        <TextView
+          android:id="@+id/text_roma"
+          android:layout_width="173dp"
+          android:layout_height="36dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
+          android:gravity="left|top"
+          android:includeFontPadding="false"
+          android:lineHeight="24dp"
+          android:text="Roma"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+      </LinearLayout>
+    </FrameLayout>
+    
+    <LinearLayout
+      android:layout_width="390dp"
+      android:layout_height="92dp"
+      android:background="@drawable/frame5"
+      android:gravity="left|top"
+      android:orientation="horizontal"
+      android:paddingBottom="33dp"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:paddingTop="8dp">
+      
+      <LinearLayout
+        android:layout_width="83.5dp"
+        android:layout_height="54dp"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+        
+        <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginTop="4dp"
+          android:layout_marginBottom="4dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/icon_home_empty" />
+        
+        <TextView
+          android:id="@+id/text_inicio"
+          android:layout_width="wrap_content"
+          android:layout_height="18dp"
+          android:layout_marginTop="4dp"
+          android:gravity="center_horizontal|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Inicio"
+          android:textColor="#FFABA6B0"
+          android:textSize="12dp" />
+      </LinearLayout>
+      
+      <LinearLayout
+        android:layout_width="83.5dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+        
+        <LinearLayout
+          android:layout_width="48dp"
+          android:layout_height="32dp"
+          android:background="@drawable/frame8"
+          android:gravity="center_horizontal|top"
+          android:orientation="vertical"
+          android:paddingBottom="4dp"
+          android:paddingTop="4dp">
+
+          <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_explorar_selected" />
+        </LinearLayout>
+        
+        <LinearLayout
+          android:layout_width="45dp"
+          android:layout_height="18dp"
+          android:layout_marginTop="4dp"
+          android:gravity="center_horizontal|top"
+          android:orientation="vertical">
+          
+          <TextView
+            android:id="@+id/text_explorar"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Explorar"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12dp" />
+        </LinearLayout>
+      </LinearLayout>
+      
+      <LinearLayout
+        android:layout_width="83.5dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+        
+        <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginTop="4dp"
+          android:layout_marginBottom="4dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/icon_itinerario" />
+        
+        <LinearLayout
+          android:layout_width="48.73dp"
+          android:layout_height="18dp"
+          android:layout_marginTop="4dp"
+          android:gravity="center_horizontal|top"
+          android:orientation="vertical">
+          
+          <TextView
+            android:id="@+id/text_itinerairo"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Itinerairo"
+            android:textColor="#FFABA6B0"
+            android:textSize="12dp" />
+        </LinearLayout>
+      </LinearLayout>
+      
+      <LinearLayout
+        android:layout_width="83.5dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+        
+        <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginTop="4dp"
+          android:layout_marginBottom="4dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/icon_cuenta" />
+        
+        <TextView
+          android:id="@+id/text_cuenta"
+          android:layout_width="wrap_content"
+          android:layout_height="18dp"
+          android:layout_marginTop="4dp"
+          android:gravity="center_horizontal|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Cuenta"
+          android:textColor="#FFABA6B0"
+          android:textSize="12dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLayout>

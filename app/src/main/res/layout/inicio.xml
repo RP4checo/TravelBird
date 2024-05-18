@@ -190,150 +190,154 @@
       </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-      android:layout_width="390dp"
-      android:layout_height="75dp"
-      android:background="@drawable/frame5"
-      android:gravity="left|top"
-      android:orientation="horizontal"
-      android:paddingBottom="13dp"
-      android:paddingLeft="16dp"
-      android:paddingRight="16dp"
-      android:paddingTop="8dp">
-      
       <LinearLayout
-        android:layout_width="83.5dp"
-        android:layout_height="54dp"
-        android:gravity="center_horizontal|top"
-        android:orientation="vertical">
-        
+          android:layout_width="390dp"
+          android:layout_height="92dp"
+          android:background="@drawable/frame5"
+          android:gravity="left|top"
+          android:orientation="horizontal"
+          android:paddingBottom="33dp"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp"
+          android:paddingTop="8dp">
+
         <LinearLayout
-          android:layout_width="48dp"
-          android:layout_height="32dp"
-          android:background="@drawable/frame8"
-          android:gravity="center_horizontal|top"
-          android:orientation="vertical"
-          android:paddingBottom="4dp"
-          android:paddingTop="4dp">
-          
+            android:layout_width="83.5dp"
+            android:layout_height="54dp"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical">
+
           <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/icon_home" />
-        </LinearLayout>
-        
-        <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="18dp"
-          android:layout_marginTop="4dp"
-          android:gravity="center_horizontal|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Inicio"
-          android:textColor="#FFFFFFFF"
-          android:textSize="12dp" />
-      </LinearLayout>
-      
-      <LinearLayout
-        android:layout_width="83.5dp"
-        android:layout_height="54dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="center_horizontal|top"
-        android:orientation="vertical">
-        
-        <ImageView
-          android:layout_width="24dp"
-          android:layout_height="24dp"
-          android:layout_marginTop="4dp"
-          android:layout_marginBottom="4dp"
-          android:scaleType="centerInside"
-          android:src="@drawable/icon_explorar" />
-        
-        <LinearLayout
-          android:layout_width="45dp"
-          android:layout_height="18dp"
-          android:layout_marginTop="4dp"
-          android:gravity="center_horizontal|top"
-          android:orientation="vertical">
-          
+              android:layout_width="24dp"
+              android:layout_height="24dp"
+              android:layout_marginTop="4dp"
+              android:layout_marginBottom="4dp"
+              android:scaleType="centerInside"
+              android:src="@drawable/icon_home_empty" />
+
           <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="18dp"
-            android:gravity="center_horizontal|center_vertical"
-            android:includeFontPadding="false"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="Explorar"
-            android:textColor="#FFABA6B0"
-            android:textSize="12dp" />
+              android:id="@+id/text_inicio"
+              android:layout_width="wrap_content"
+              android:layout_height="18dp"
+              android:layout_marginTop="4dp"
+              android:gravity="center_horizontal|center_vertical"
+              android:includeFontPadding="false"
+              android:maxLines="1"
+              android:singleLine="true"
+              android:text="Inicio"
+              android:textColor="#FFABA6B0"
+              android:textSize="12dp" />
         </LinearLayout>
-      </LinearLayout>
-      
-      <LinearLayout
-        android:layout_width="83.5dp"
-        android:layout_height="54dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="center_horizontal|top"
-        android:orientation="vertical">
-        
-        <ImageView
-          android:layout_width="24dp"
-          android:layout_height="24dp"
-          android:layout_marginTop="4dp"
-          android:layout_marginBottom="4dp"
-          android:scaleType="centerInside"
-          android:src="@drawable/icon_itinerario" />
-        
+
         <LinearLayout
-          android:layout_width="48.73dp"
-          android:layout_height="18dp"
-          android:layout_marginTop="4dp"
-          android:gravity="center_horizontal|top"
-          android:orientation="vertical">
-          
+            android:layout_width="83.5dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical">
+
+          <LinearLayout
+              android:layout_width="48dp"
+              android:layout_height="32dp"
+              android:background="@drawable/frame8"
+              android:gravity="center_horizontal|top"
+              android:orientation="vertical"
+              android:paddingBottom="4dp"
+              android:paddingTop="4dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_explorar_selected" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="45dp"
+              android:layout_height="18dp"
+              android:layout_marginTop="4dp"
+              android:gravity="center_horizontal|top"
+              android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_explorar"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Explorar"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12dp" />
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="83.5dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="24dp"
+              android:layout_height="24dp"
+              android:layout_marginTop="4dp"
+              android:layout_marginBottom="4dp"
+              android:scaleType="centerInside"
+              android:src="@drawable/icon_itinerario" />
+
+          <LinearLayout
+              android:layout_width="48.73dp"
+              android:layout_height="18dp"
+              android:layout_marginTop="4dp"
+              android:gravity="center_horizontal|top"
+              android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_itinerairo"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Itinerairo"
+                android:textColor="#FFABA6B0"
+                android:textSize="12dp" />
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="83.5dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="24dp"
+              android:layout_height="24dp"
+              android:layout_marginTop="4dp"
+              android:layout_marginBottom="4dp"
+              android:scaleType="centerInside"
+              android:src="@drawable/icon_cuenta" />
+
           <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="18dp"
-            android:gravity="center_horizontal|center_vertical"
-            android:includeFontPadding="false"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="Itinerario"
-            android:textColor="#FFABA6B0"
-            android:textSize="12dp" />
+              android:id="@+id/text_cuenta"
+              android:layout_width="wrap_content"
+              android:layout_height="18dp"
+              android:layout_marginTop="4dp"
+              android:gravity="center_horizontal|center_vertical"
+              android:includeFontPadding="false"
+              android:maxLines="1"
+              android:singleLine="true"
+              android:text="Cuenta"
+              android:textColor="#FFABA6B0"
+              android:textSize="12dp" />
         </LinearLayout>
       </LinearLayout>
-      
-      <LinearLayout
-        android:layout_width="83.5dp"
-        android:layout_height="54dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="center_horizontal|top"
-        android:orientation="vertical">
-        
-        <ImageView
-          android:layout_width="24dp"
-          android:layout_height="24dp"
-          android:layout_marginTop="4dp"
-          android:layout_marginBottom="4dp"
-          android:scaleType="centerInside"
-          android:src="@drawable/icon_cuenta" />
-        
-        <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="18dp"
-          android:layout_marginTop="4dp"
-          android:gravity="center_horizontal|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Cuenta"
-          android:textColor="#FFABA6B0"
-          android:textSize="12dp" />
-      </LinearLayout>
-    </LinearLayout>
 
     </LinearLayout>
   </LinearLayout>
