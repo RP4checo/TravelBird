@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/container_cuenta"
+  android:layout_width="match_parent"
+  android:layout_height="910dp"
+  android:background="@drawable/frame3"
+  android:gravity="left|top"
+  android:orientation="vertical">
+
+  <LinearLayout
+      android:id="@+id/container_depth_frame"
+      android:layout_width="390dp"
+      android:layout_height="910dp"
+      android:background="@drawable/frame"
+      android:gravity="left|top"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame2"
+        android:layout_width="390dp"
+        android:layout_height="72dp"
+        android:background="@drawable/frame"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+      <ImageView
+          android:id="@+id/container_depth_frame4"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
+          android:scaleType="centerInside"
+          android:src="@drawable/icon_back_flecha" />
+      <!-- 11:1025:space-view0 Depth 1, Frame 0_space_view0 space-view -->
+      <View
+          android:layout_width="0dp"
+          android:layout_height="24dp"
+          android:layout_weight="1" />
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame7"
+          android:layout_width="262dp"
+          android:layout_height="22.5dp"
+          android:gravity="left|top"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_depth_frame8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/text_cuenta"
+              android:layout_width="wrap_content"
+              android:layout_height="23dp"
+              android:gravity="left|center_vertical"
+              android:includeFontPadding="false"
+              android:maxLines="1"
+              android:singleLine="true"
+              android:text="Cuenta"
+              android:textColor="#FFFFFFFF"
+              android:textSize="18dp" />
+        </LinearLayout>
+      </LinearLayout>
+      <!-- 11:1025:space-view1 Depth 1, Frame 0_space_view1 space-view -->
+      <View
+          android:layout_width="0dp"
+          android:layout_height="22.5dp"
+          android:layout_weight="1" />
+
+      <ImageView
+          android:id="@+id/container_depth_frame9"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/container_depth_frame13"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="131dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_miles" />
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame15"
+        android:layout_width="160.47dp"
+        android:layout_height="27.5dp"
+        android:layout_marginLeft="114.77dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="114.77dp"
+        android:gravity="left|top"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame16"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal|top"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_miles_morales"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Miles Morales"
+            android:textColor="#FFFFFFFF"
+            android:textSize="22dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame18"
+        android:layout_width="84.63dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="152.69dp"
+        android:layout_marginRight="152.69dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/text_spidy_miles"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="center_horizontal|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="spidy_miles"
+          android:textColor="#FFABA6B0"
+          android:textSize="16dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container_depth_frame19"
+        android:layout_width="390dp"
+        android:layout_height="66dp"
+        android:background="@drawable/frame">
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame22"
+          android:layout_width="358dp"
+          android:layout_height="48dp"
+          android:layout_gravity="top|left"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="12dp"
+          android:background="@drawable/frame2"
+          android:gravity="left|top"
+          android:orientation="vertical"
+          android:paddingLeft="20dp"
+          android:paddingTop="12dp"
+          android:paddingRight="20dp"
+          android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/text_lista_favoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Lista de Favoritos"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16dp" />
+      </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame24"
+        android:layout_width="390dp"
+        android:layout_height="56dp"
+        android:background="@drawable/frame"
+        android:clipToPadding="false"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+      <TextView
+          android:id="@+id/container_depth_frame26"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Nombre"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame27"
+          android:layout_width="117.56dp"
+          android:layout_height="24dp"
+          android:layout_marginLeft="16dp"
+          android:clipToPadding="false"
+          android:gravity="right|top"
+          android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/container_depth_frame29"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Miles Morales"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame25"
+        android:layout_width="390dp"
+        android:layout_height="56dp"
+        android:background="@drawable/frame"
+        android:clipToPadding="false"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+      <TextView
+          android:id="@+id/container_depth_frame26"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Usuario"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame27"
+          android:layout_width="117.56dp"
+          android:layout_height="24dp"
+          android:layout_marginLeft="16dp"
+          android:clipToPadding="false"
+          android:gravity="right|top"
+          android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/container_depth_frame29"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="spidy_miles"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame38"
+        android:layout_width="390dp"
+        android:layout_height="56dp"
+        android:background="@drawable/frame"
+        android:clipToPadding="false"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+      <TextView
+          android:id="@+id/container_depth_frame40"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Cumpleaños"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame41"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:layout_marginLeft="16dp"
+          android:clipToPadding="false"
+          android:gravity="right|top"
+          android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/container_depth_frame43"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="03 Julio, 2002"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame45"
+        android:layout_width="390dp"
+        android:layout_height="56dp"
+        android:background="@drawable/frame"
+        android:clipToPadding="false"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+      <TextView
+          android:id="@+id/container_depth_frame47"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Celular"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame48"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:layout_marginLeft="16dp"
+          android:clipToPadding="false"
+          android:gravity="right|top"
+          android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/container_depth_frame50"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="(405) 439 - 3985"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame52"
+        android:layout_width="390dp"
+        android:layout_height="56dp"
+        android:background="@drawable/frame"
+        android:clipToPadding="false"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+      <TextView
+          android:id="@+id/container_depth_frame54"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Email"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame55"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:layout_marginLeft="16dp"
+          android:clipToPadding="false"
+          android:gravity="right|top"
+          android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/container_depth_frame57"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="spidy_miles@gmail.com"
+            android:textColor="#FFABA6B0"
+            android:textSize="16dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame59"
+        android:layout_width="390dp"
+        android:layout_height="56dp"
+        android:background="@drawable/frame"
+        android:clipToPadding="false"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp">
+
+      <TextView
+          android:id="@+id/container_depth_frame61"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Contraseña"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame62"
+          android:layout_width="28dp"
+          android:layout_height="28dp"
+          android:layout_marginLeft="16dp"
+          android:gravity="right|top"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/container_depth_frame65"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_next_flecha" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/container_depth_frame69"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="7.5dp"
+        android:gravity="left|top"
+        android:includeFontPadding="false"
+        android:lineHeight="22.5dp"
+        android:text="Soporte"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame71"
+        android:layout_width="390dp"
+        android:layout_height="56dp"
+        android:background="@drawable/frame"
+        android:clipToPadding="false"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp">
+
+      <TextView
+          android:id="@+id/container_depth_frame73"
+          android:layout_width="wrap_content"
+          android:layout_height="28dp"
+          android:gravity="left|center_vertical"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Contáctanos"
+          android:textColor="#FFFFFFFF"
+          android:textSize="18dp" />
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame74"
+          android:layout_width="28dp"
+          android:layout_height="28dp"
+          android:layout_marginLeft="16dp"
+          android:gravity="right|top"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/container_depth_frame77"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_next_flecha" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_depth_frame80"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
+        android:background="@drawable/frame"
+        android:gravity="left|top"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="13dp">
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame81"
+          android:layout_width="83.5dp"
+          android:layout_height="65dp"
+          android:gravity="center_horizontal|top"
+          android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/container_depth_frame83"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_home_empty" />
+
+        <TextView
+            android:id="@+id/container_depth_frame86"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Inicio"
+            android:textColor="#FFABA6B0"
+            android:textSize="12dp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame87"
+          android:layout_width="83.5dp"
+          android:layout_height="65dp"
+          android:layout_marginLeft="8dp"
+          android:gravity="center_horizontal|top"
+          android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/container_depth_frame89"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_explorar" />
+
+        <LinearLayout
+            android:id="@+id/container_depth_frame92"
+            android:layout_width="45dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/text_explorar"
+              android:layout_width="wrap_content"
+              android:layout_height="18dp"
+              android:gravity="center_horizontal|center_vertical"
+              android:includeFontPadding="false"
+              android:maxLines="1"
+              android:singleLine="true"
+              android:text="Explorar"
+              android:textColor="#FFABA6B0"
+              android:textSize="12dp" />
+        </LinearLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame93"
+          android:layout_width="83.5dp"
+          android:layout_height="65dp"
+          android:layout_marginLeft="8dp"
+          android:gravity="center_horizontal|top"
+          android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/container_depth_frame95"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_itinerario" />
+
+        <LinearLayout
+            android:id="@+id/container_depth_frame98"
+            android:layout_width="54dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/text_itinerario"
+              android:layout_width="wrap_content"
+              android:layout_height="18dp"
+              android:gravity="center_horizontal|center_vertical"
+              android:includeFontPadding="false"
+              android:maxLines="1"
+              android:singleLine="true"
+              android:text="Itinierario"
+              android:textColor="#FFABA6B0"
+              android:textSize="12dp" />
+        </LinearLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/container_depth_frame99"
+          android:layout_width="83.5dp"
+          android:layout_height="65dp"
+          android:layout_marginLeft="8dp"
+          android:gravity="center_horizontal|top"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_depth_frame101"
+            android:layout_width="32dp"
+            android:layout_height="36dp"
+            android:background="@drawable/icon_cuenta_on"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/container_depth_frame104"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Cuenta"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLayout>
