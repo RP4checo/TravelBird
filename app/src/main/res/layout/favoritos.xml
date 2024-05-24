@@ -12,7 +12,7 @@
   android:orientation="vertical">
   
   <LinearLayout
-    android:id="@+id/container_depth_frame"
+    android:id="@+id/container_depth_frame170"
     android:layout_width="390dp"
     android:layout_height="890dp"
     android:background="@drawable/frame"
@@ -20,7 +20,7 @@
     android:orientation="vertical">
     
     <LinearLayout
-      android:id="@+id/container_depth_frame2"
+      android:id="@+id/container_depth_frame171"
       android:layout_width="390dp"
       android:layout_height="72dp"
       android:background="@drawable/frame"
@@ -32,7 +32,7 @@
       android:paddingTop="16dp">
 
       <ImageView
-          android:id="@+id/container_depth_frame4"
+          android:id="@+id/container_depth_frame172"
           android:layout_width="20dp"
           android:layout_height="24dp"
           android:layout_marginTop="12dp"
@@ -46,14 +46,14 @@
         android:layout_weight="1" />
       
       <LinearLayout
-        android:id="@+id/container_depth_frame7"
+        android:id="@+id/container_depth_frame173"
         android:layout_width="262dp"
         android:layout_height="22.5dp"
         android:gravity="left|top"
         android:orientation="vertical">
         
         <LinearLayout
-          android:id="@+id/container_depth_frame8"
+          android:id="@+id/container_depth_frame174"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:gravity="left|top"
@@ -69,7 +69,8 @@
             android:singleLine="true"
             android:text="Favoritos"
             android:textColor="#FFFFFFFF"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:textStyle="bold" />
         </LinearLayout>
       </LinearLayout>
       <!-- 33:28:space-view1 Depth 1, Frame 0_space_view1 space-view -->
@@ -79,16 +80,16 @@
         android:layout_weight="1" />
       
       <ImageView
-        android:id="@+id/container_depth_frame9"
+        android:id="@+id/container_depth_frame175"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:scaleType="centerInside" />
     </LinearLayout>
     
     <TextView
-      android:id="@+id/container_depth_frame12"
+      android:id="@+id/container_depth_frame176"
       android:layout_width="wrap_content"
-      android:layout_height="59.5dp"
+      android:layout_height="40dp"
       android:layout_marginLeft="16dp"
       android:layout_marginRight="16dp"
       android:layout_marginTop="20dp"
@@ -101,7 +102,7 @@
       android:textSize="22dp" />
     
     <LinearLayout
-      android:id="@+id/container_depth_frame14"
+      android:id="@+id/container_depth_frame177"
       android:layout_width="390dp"
       android:layout_height="56dp"
       android:background="@drawable/frame"
@@ -110,7 +111,11 @@
       android:orientation="horizontal"
       android:paddingBottom="8dp"
       android:paddingTop="8dp">
-      
+
+      <View
+          android:layout_width="20dp"
+          android:layout_height="25dp" />
+
       <ImageView
         android:id="@+id/image_depth_frame2"
         android:layout_width="40dp"
@@ -119,7 +124,7 @@
         android:src="@drawable/pic_paris" />
       
       <TextView
-        android:id="@+id/container_depth_frame16"
+        android:id="@+id/container_depth_frame178"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginLeft="16dp"
@@ -132,15 +137,15 @@
         android:textSize="16dp" />
       
       <LinearLayout
-        android:id="@+id/container_depth_frame17"
+        android:id="@+id/container_depth_frame179"
         android:layout_width="84dp"
         android:layout_height="32dp"
         android:layout_marginLeft="16dp"
         android:gravity="right|top"
         android:orientation="horizontal">
-        
+
         <LinearLayout
-          android:id="@+id/container_depth_frame18"
+          android:id="@+id/container_depth_frame180"
           android:layout_width="84dp"
           android:layout_height="32dp"
           android:background="@drawable/frame1"
@@ -148,15 +153,15 @@
           android:orientation="horizontal"
           android:paddingLeft="16dp"
           android:paddingRight="16dp">
-          
+
           <LinearLayout
-            android:id="@+id/container_depth_frame21"
+            android:id="@+id/container_depth_frame181"
             android:layout_width="64dp"
             android:layout_height="21dp"
             android:background="@drawable/frame1"
             android:gravity="left|top"
             android:orientation="vertical">
-            
+
             <TextView
               android:id="@+id/text_detalles"
               android:layout_width="wrap_content"
@@ -174,7 +179,7 @@
     </LinearLayout>
     
     <LinearLayout
-      android:id="@+id/container_depth_frame23"
+      android:id="@+id/container_depth_frame182"
       android:layout_width="390dp"
       android:layout_height="56dp"
       android:background="@drawable/frame"
@@ -183,16 +188,20 @@
       android:orientation="horizontal"
       android:paddingBottom="8dp"
       android:paddingTop="8dp">
-      
+
+      <View
+          android:layout_width="20dp"
+          android:layout_height="25dp" />
+
       <ImageView
-        android:id="@+id/image_depth_frame3"
+        android:id="@+id/image_depth_frame183"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:scaleType="centerInside"
         android:src="@drawable/pic_museo3" />
       
       <TextView
-        android:id="@+id/container_depth_frame25"
+        android:id="@+id/container_depth_frame184"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginLeft="16dp"
@@ -205,7 +214,7 @@
         android:textSize="16dp" />
       
       <LinearLayout
-        android:id="@+id/container_depth_frame26"
+        android:id="@+id/container_depth_frame185"
         android:layout_width="84dp"
         android:layout_height="32dp"
         android:layout_marginLeft="16dp"
@@ -213,7 +222,7 @@
         android:orientation="horizontal">
         
         <LinearLayout
-          android:id="@+id/container_depth_frame27"
+          android:id="@+id/container_depth_frame186"
           android:layout_width="84dp"
           android:layout_height="32dp"
           android:background="@drawable/frame1"
@@ -223,7 +232,7 @@
           android:paddingRight="16dp">
           
           <LinearLayout
-            android:id="@+id/container_depth_frame30"
+            android:id="@+id/container_depth_frame187"
             android:layout_width="62dp"
             android:layout_height="21dp"
             android:background="@drawable/frame1"
@@ -245,9 +254,9 @@
         </LinearLayout>
       </LinearLayout>
     </LinearLayout>
-    
+
     <LinearLayout
-      android:id="@+id/container_depth_frame32"
+      android:id="@+id/container_depth_frame188"
       android:layout_width="390dp"
       android:layout_height="56dp"
       android:background="@drawable/frame"
@@ -256,16 +265,20 @@
       android:orientation="horizontal"
       android:paddingBottom="8dp"
       android:paddingTop="8dp">
-      
+
+      <View
+          android:layout_width="20dp"
+          android:layout_height="25dp" />
+
       <ImageView
         android:id="@+id/image_depth_frame4"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:scaleType="centerInside"
         android:src="@drawable/pic_notredam" />
-      
+
       <TextView
-        android:id="@+id/container_depth_frame34"
+        android:id="@+id/container_depth_frame189"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginLeft="16dp"
@@ -276,17 +289,17 @@
         android:text="Catedral de Notre-Dame"
         android:textColor="#FFFFFFFF"
         android:textSize="16dp" />
-      
+
       <LinearLayout
-        android:id="@+id/container_depth_frame35"
+        android:id="@+id/container_depth_frame190"
         android:layout_width="84dp"
         android:layout_height="32dp"
         android:layout_marginLeft="16dp"
         android:gravity="right|top"
         android:orientation="horizontal">
-        
+
         <LinearLayout
-          android:id="@+id/container_depth_frame36"
+          android:id="@+id/container_depth_frame191"
           android:layout_width="84dp"
           android:layout_height="32dp"
           android:background="@drawable/frame1"
@@ -294,15 +307,15 @@
           android:orientation="horizontal"
           android:paddingLeft="16dp"
           android:paddingRight="16dp">
-          
+
           <LinearLayout
-            android:id="@+id/container_depth_frame39"
+            android:id="@+id/container_depth_frame192"
             android:layout_width="62dp"
             android:layout_height="21dp"
             android:background="@drawable/frame1"
             android:gravity="left|top"
             android:orientation="vertical">
-            
+
             <TextView
               android:id="@+id/text_detalles2"
               android:layout_width="wrap_content"
@@ -318,9 +331,9 @@
         </LinearLayout>
       </LinearLayout>
     </LinearLayout>
-    
+
     <LinearLayout
-      android:id="@+id/container_depth_frame41"
+      android:id="@+id/container_depth_frame193"
       android:layout_width="390dp"
       android:layout_height="56dp"
       android:background="@drawable/frame"
@@ -329,7 +342,11 @@
       android:orientation="horizontal"
       android:paddingBottom="8dp"
       android:paddingTop="8dp">
-      
+
+      <View
+          android:layout_width="20dp"
+          android:layout_height="25dp" />
+
       <ImageView
         android:id="@+id/image_depth_frame5"
         android:layout_width="40dp"
@@ -338,7 +355,7 @@
         android:src="@drawable/pic_crucero" />
       
       <TextView
-        android:id="@+id/container_depth_frame43"
+        android:id="@+id/container_depth_frame194"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginLeft="16dp"
@@ -351,7 +368,7 @@
         android:textSize="16dp" />
       
       <LinearLayout
-        android:id="@+id/container_depth_frame44"
+        android:id="@+id/container_depth_frame195"
         android:layout_width="84dp"
         android:layout_height="32dp"
         android:layout_marginLeft="16dp"
@@ -359,41 +376,41 @@
         android:orientation="horizontal">
         
         <LinearLayout
-          android:id="@+id/container_depth_frame45"
+          android:id="@+id/container_depth_frame196"
           android:layout_width="84dp"
           android:layout_height="32dp"
-          android:background="@drawable/container_depth_frame45"
+          android:background="@drawable/frame1"
           android:gravity="center"
           android:orientation="horizontal"
           android:paddingLeft="16dp"
           android:paddingRight="16dp">
           
           <LinearLayout
-            android:id="@+id/container_depth_frame48"
+            android:id="@+id/container_depth_frame197"
             android:layout_width="62dp"
             android:layout_height="21dp"
             android:background="@drawable/frame1"
             android:gravity="left|top"
             android:orientation="vertical">
-            
+
             <TextView
-              android:id="@+id/text_detalles3"
-              android:layout_width="wrap_content"
-              android:layout_height="21dp"
-              android:gravity="left|center_vertical"
-              android:includeFontPadding="false"
-              android:maxLines="1"
-              android:singleLine="true"
-              android:text="Detalles"
-              android:textColor="#FFFFFFFF"
-              android:textSize="14dp" />
+                android:id="@+id/text_detalles3"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Detalles"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14dp" />
           </LinearLayout>
         </LinearLayout>
       </LinearLayout>
     </LinearLayout>
     
     <LinearLayout
-      android:id="@+id/container_depth_frame50"
+      android:id="@+id/container_depth_frame198"
       android:layout_width="390dp"
       android:layout_height="56dp"
       android:background="@drawable/frame"
@@ -403,15 +420,19 @@
       android:paddingBottom="8dp"
       android:paddingTop="8dp">
 
+      <View
+          android:layout_width="20dp"
+          android:layout_height="25dp" />
+
       <ImageView
-          android:id="@+id/image_depth_frame6"
+          android:id="@+id/image_depth_frame199"
           android:layout_width="31dp"
           android:layout_height="40dp"
           android:scaleType="centerInside"
           android:src="@drawable/pic_museo1" />
       
       <TextView
-        android:id="@+id/container_depth_frame52"
+        android:id="@+id/container_depth_frame200"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginLeft="16dp"
@@ -424,15 +445,15 @@
         android:textSize="16dp" />
       
       <LinearLayout
-        android:id="@+id/container_depth_frame53"
+        android:id="@+id/container_depth_frame201"
         android:layout_width="84dp"
         android:layout_height="32dp"
         android:layout_marginLeft="16dp"
         android:gravity="right|top"
         android:orientation="horizontal">
-        
+
         <LinearLayout
-          android:id="@+id/container_depth_frame54"
+          android:id="@+id/container_depth_frame202"
           android:layout_width="84dp"
           android:layout_height="32dp"
           android:background="@drawable/frame1"
@@ -440,15 +461,15 @@
           android:orientation="horizontal"
           android:paddingLeft="16dp"
           android:paddingRight="16dp">
-          
+
           <LinearLayout
-            android:id="@+id/container_depth_frame57"
+            android:id="@+id/container_depth_frame203"
             android:layout_width="62dp"
             android:layout_height="21dp"
             android:background="@drawable/frame1"
             android:gravity="left|top"
             android:orientation="vertical">
-            
+
             <TextView
               android:id="@+id/text_detalles4"
               android:layout_width="wrap_content"
@@ -466,7 +487,7 @@
     </LinearLayout>
     
     <LinearLayout
-      android:id="@+id/container_depth_frame59"
+      android:id="@+id/container_depth_frame204"
       android:layout_width="390dp"
       android:layout_height="56dp"
       android:background="@drawable/frame"
@@ -475,16 +496,19 @@
       android:orientation="horizontal"
       android:paddingBottom="8dp"
       android:paddingTop="8dp">
-      
+
+      <View
+          android:layout_width="20dp"
+          android:layout_height="25dp" />
       <ImageView
-        android:id="@+id/image_depth_frame7"
+        android:id="@+id/image_depth_frame205"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:scaleType="centerInside"
         android:src="@drawable/pic_disney" />
       
       <TextView
-        android:id="@+id/container_depth_frame61"
+        android:id="@+id/container_depth_frame206"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginLeft="16dp"
@@ -497,7 +521,7 @@
         android:textSize="16dp" />
       
       <LinearLayout
-        android:id="@+id/container_depth_frame62"
+        android:id="@+id/container_depth_frame207"
         android:layout_width="84dp"
         android:layout_height="32dp"
         android:layout_marginLeft="16dp"
@@ -505,7 +529,7 @@
         android:orientation="horizontal">
         
         <LinearLayout
-          android:id="@+id/container_depth_frame63"
+          android:id="@+id/container_depth_frame208"
           android:layout_width="84dp"
           android:layout_height="32dp"
           android:background="@drawable/frame1"
@@ -515,7 +539,7 @@
           android:paddingRight="16dp">
           
           <LinearLayout
-            android:id="@+id/container_depth_frame66"
+            android:id="@+id/container_depth_frame209"
             android:layout_width="62dp"
             android:layout_height="21dp"
             android:background="@drawable/frame1"
@@ -539,7 +563,7 @@
     </LinearLayout>
     
     <LinearLayout
-      android:id="@+id/container_depth_frame70"
+      android:id="@+id/container_depth_frame210"
       android:layout_width="390dp"
       android:layout_height="319dp"
       android:background="@drawable/frame"
@@ -551,7 +575,7 @@
     </LinearLayout>
     
     <LinearLayout
-      android:id="@+id/container_depth_frame72"
+      android:id="@+id/container_depth_frame211"
       android:layout_width="358dp"
       android:layout_height="48dp"
       android:layout_marginLeft="16dp"
@@ -565,7 +589,7 @@
       android:paddingRight="20dp">
       
       <LinearLayout
-        android:id="@+id/container_depth_frame75"
+        android:id="@+id/container_depth_frame212"
         android:layout_width="42.56dp"
         android:layout_height="24dp"
         android:background="@drawable/frame2"

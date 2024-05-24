@@ -12,7 +12,7 @@
   android:orientation="vertical">
 
   <LinearLayout
-      android:id="@+id/container_depth_frame1"
+      android:id="@+id/container_depth_frame6"
       android:layout_width="match_parent"
       android:layout_height="844dp"
       android:background="@drawable/frame"
@@ -20,7 +20,7 @@
       android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/container_depth_frame2"
+        android:id="@+id/container_depth_frame7"
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:background="@drawable/frame"
@@ -33,7 +33,7 @@
         android:paddingBottom="8dp">
 
       <TextView
-          android:id="@+id/container_depth_frame3"
+          android:id="@+id/container_depth_frame8"
           android:layout_width="377dp"
           android:layout_height="wrap_content"
           android:gravity="center_horizontal|top"
@@ -42,14 +42,15 @@
           android:singleLine="true"
           android:text="TravelBird"
           android:textColor="#FFFFFFFF"
-          android:textSize="22dp" />
+          android:textSize="22dp"
+          android:textStyle="bold" />
       <!-- 10:293:space-view1 Depth 1, Frame 0_space_view1 space-view -->
 
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/container_depth_frame12"
+        android:id="@+id/container_depth_frame9"
         android:layout_width="wrap_content"
         android:layout_height="87dp"
         android:layout_marginLeft="16dp"
@@ -64,7 +65,7 @@
         android:textSize="22dp" />
 
     <TextView
-        android:id="@+id/container_depth_frame15"
+        android:id="@+id/container_depth_frame10"
         android:layout_width="378dp"
         android:layout_height="60dp"
         android:layout_marginLeft="16dp"
@@ -79,8 +80,8 @@
         android:textSize="16dp" />
 
     <LinearLayout
-        android:id="@+id/container_depth_frame20"
-        android:layout_width="wrap_content"
+        android:id="@+id/container_depth_frame11"
+        android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
@@ -88,29 +89,20 @@
         android:layout_marginBottom="12dp"
         android:background="@drawable/frame1"
         android:clipToPadding="false"
-        android:gravity="left|top"
+        android:gravity="left|center_vertical"
         android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="16dp">
+        android:padding="16dp">
 
-      <TextView
-          android:id="@+id/container_depth_frame23"
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
-          android:gravity="left|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Email"
-          android:textColor="#FFABA6B0"
-          android:textSize="16dp" />
-      <!-- 10:312:space-view0 Depth 5, Frame 0_space_view0 space-view -->
-      <View
+      <EditText
+          android:id="@+id/emailEditText"
           android:layout_width="0dp"
-          android:layout_height="24dp"
-          android:layout_weight="1" />
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:hint="Email"
+          android:inputType="textEmailAddress"
+          android:textColor="#FFABA6B0"
+          android:textSize="16sp"
+          android:gravity="center_vertical" />
 
       <ImageView
           android:id="@+id/link_icon_container"
@@ -121,8 +113,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/container_depth_frame32"
-        android:layout_width="wrap_content"
+        android:id="@+id/container_depth_frame13"
+        android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
@@ -130,29 +122,20 @@
         android:layout_marginBottom="12dp"
         android:background="@drawable/frame1"
         android:clipToPadding="false"
-        android:gravity="left|top"
+        android:gravity="left|center_vertical"
         android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="16dp">
+        android:padding="16dp">
 
-      <TextView
-          android:id="@+id/container_depth_frame35"
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
-          android:gravity="left|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Contraseña"
-          android:textColor="#FFABA6B0"
-          android:textSize="16dp" />
-      <!-- 10:324:space-view0 Depth 5, Frame 0_space_view0 space-view -->
-      <View
+      <EditText
+          android:id="@+id/passwordEditText"
           android:layout_width="0dp"
-          android:layout_height="24dp"
-          android:layout_weight="1" />
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:hint="Contraseña"
+          android:inputType="textPassword"
+          android:textColor="#FFABA6B0"
+          android:textSize="16sp"
+          android:gravity="center_vertical" />
 
       <ImageView
           android:id="@+id/key_icon_container"
@@ -162,8 +145,9 @@
           android:src="@drawable/icon_key" />
     </LinearLayout>
 
+
     <LinearLayout
-        android:id="@+id/container_depth_frame4"
+        android:id="@+id/container_depth_frame15"
         android:layout_width="377dp"
         android:layout_height="48dp"
         android:layout_marginLeft="16dp"
@@ -177,7 +161,7 @@
         android:paddingRight="20dp">
 
       <LinearLayout
-          android:id="@+id/container_depth_frame5"
+          android:id="@+id/container_depth_frame16"
           android:layout_width="157.88dp"
           android:layout_height="24dp"
           android:background="@drawable/frame2"
@@ -199,7 +183,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/container_depth_frame6"
+        android:id="@+id/container_depth_frame17"
         android:layout_width="378dp"
         android:layout_height="58dp"
         android:layout_marginLeft="16dp"
@@ -214,11 +198,11 @@
         android:textSize="14dp" />
 
     <TextView
-        android:id="@+id/container_depth_frame50"
-        android:layout_width="378dp"
-        android:layout_height="37dp"
+        android:id="@+id/container_depth_frame18"
+        android:layout_width="380dp"
+        android:layout_height="27dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="1dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="12dp"
         android:gravity="center_horizontal|top"
@@ -228,21 +212,28 @@
         android:textColor="#FFABA6B0"
         android:textSize="14dp" />
 
-    <TextView
-        android:id="@+id/container_depth_frame53"
-        android:layout_width="377dp"
-        android:layout_height="37dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="12dp"
-        android:gravity="center_horizontal|top"
-        android:includeFontPadding="false"
-        android:lineHeight="21dp"
-        android:text="Crear una cuenta"
-        android:textColor="#FF8A5CB2"
-        android:textSize="14dp" />
+    <LinearLayout
+        android:id="@+id/container_depth_frame20"
+        android:layout_width="400dp"
+        android:layout_height="24dp"
+        android:background="@drawable/frame"
+        android:gravity="center"
+        android:orientation="vertical">
 
+      <TextView
+          android:id="@+id/container_depth_frame20_1"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:gravity="center"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:text="Crear una cuenta"
+          android:textColor="#FF8A5CB2"
+          android:textSize="16dp"
+          android:textStyle="bold" />
+    </LinearLayout>
 
   </LinearLayout>
 </LinearLayout>
+

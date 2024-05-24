@@ -12,7 +12,7 @@
   android:orientation="vertical">
 
   <LinearLayout
-      android:id="@+id/container_depth_frame2"
+      android:id="@+id/container_depth_frame1"
       android:layout_width="match_parent"
       android:layout_height="860dp"
       android:background="@drawable/frame"
@@ -20,7 +20,7 @@
       android:orientation="vertical">
 
     <FrameLayout
-        android:id="@+id/container_depth_frame7"
+        android:id="@+id/container_depth_frame2"
         android:layout_width="390dp"
         android:layout_height="320dp"
         android:background="@drawable/frame">
@@ -35,7 +35,7 @@
     </FrameLayout>
 
     <TextView
-        android:id="@+id/container_depth_frame1"
+        android:id="@+id/container_depth_frame3"
         android:layout_width="378dp"
         android:layout_height="76dp"
         android:layout_marginLeft="16dp"
@@ -47,10 +47,11 @@
         android:lineHeight="40dp"
         android:text="TravelBird"
         android:textColor="#FFFFFFFF"
-        android:textSize="32dp" />
+        android:textSize="32dp"
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:id="@+id/container_depth_frame6"
+        android:id="@+id/container_depth_frame4"
         android:layout_width="381dp"
         android:layout_height="48dp"
         android:layout_marginLeft="16dp"
@@ -64,7 +65,7 @@
         android:paddingRight="20dp">
 
       <LinearLayout
-          android:id="@+id/container_depth_frame9"
+          android:id="@+id/container_depth_frame5"
           android:layout_width="73.55dp"
           android:layout_height="24dp"
           android:background="@drawable/frame2"

@@ -40,7 +40,8 @@
           android:singleLine="true"
           android:text="TravelBird"
           android:textColor="#FFFFFFFF"
-          android:textSize="22dp" />
+          android:textSize="22dp"
+          android:textStyle="bold" />
       <!-- 10:231:space-view1 Depth 1, Frame 0_space_view1 space-view -->
 
     </LinearLayout>
@@ -74,7 +75,8 @@
         android:textSize="16dp" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/container_depth_frame11"
+        android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
@@ -82,30 +84,23 @@
         android:layout_marginBottom="12dp"
         android:background="@drawable/frame1"
         android:clipToPadding="false"
-        android:gravity="left|top"
+        android:gravity="left|center_vertical"
         android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="16dp">
+        android:padding="16dp">
 
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
-          android:gravity="left|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Email"
-          android:textColor="#FFABA6B0"
-          android:textSize="16dp" />
-      <!-- 10:250:space-view0 Depth 5, Frame 0_space_view0 space-view -->
-      <View
+      <EditText
+          android:id="@+id/emailEditText"
           android:layout_width="0dp"
-          android:layout_height="24dp"
-          android:layout_weight="1" />
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:hint="Email"
+          android:inputType="textEmailAddress"
+          android:textColor="#FFABA6B0"
+          android:textSize="16sp"
+          android:gravity="center_vertical" />
 
       <ImageView
+          android:id="@+id/link_icon_container"
           android:layout_width="24dp"
           android:layout_height="24dp"
           android:scaleType="centerInside"
@@ -113,7 +108,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/container_depth_frame12_1"
+        android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
@@ -121,38 +117,33 @@
         android:layout_marginBottom="12dp"
         android:background="@drawable/frame1"
         android:clipToPadding="false"
-        android:gravity="left|top"
+        android:gravity="left|center_vertical"
         android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="16dp">
+        android:padding="16dp">
 
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
-          android:gravity="left|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Usuario"
-          android:textColor="#FFABA6B0"
-          android:textSize="16dp" />
-      <!-- 10:262:space-view0 Depth 5, Frame 0_space_view0 space-view -->
-      <View
+      <EditText
+          android:id="@+id/usuarioEditText_cuenta"
           android:layout_width="0dp"
-          android:layout_height="24dp"
-          android:layout_weight="1" />
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:hint="Nombre de usuario"
+          android:inputType="text"
+          android:textColor="#FFABA6B0"
+          android:textSize="16sp"
+          android:gravity="center_vertical" />
 
       <ImageView
+          android:id="@+id/link_icon_container_1"
           android:layout_width="24dp"
           android:layout_height="24dp"
           android:scaleType="centerInside"
           android:src="@drawable/icon_link" />
     </LinearLayout>
 
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/container_depth_frame13"
+        android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
@@ -160,30 +151,23 @@
         android:layout_marginBottom="12dp"
         android:background="@drawable/frame1"
         android:clipToPadding="false"
-        android:gravity="left|top"
+        android:gravity="left|center_vertical"
         android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="16dp">
+        android:padding="16dp">
 
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
-          android:gravity="left|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Contraseña"
-          android:textColor="#FFABA6B0"
-          android:textSize="16dp" />
-      <!-- 10:274:space-view0 Depth 5, Frame 0_space_view0 space-view -->
-      <View
+      <EditText
+          android:id="@+id/passwordEditText"
           android:layout_width="0dp"
-          android:layout_height="24dp"
-          android:layout_weight="1" />
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:hint="Contraseña"
+          android:inputType="textPassword"
+          android:textColor="#FFABA6B0"
+          android:textSize="16sp"
+          android:gravity="center_vertical" />
 
       <ImageView
+          android:id="@+id/key_icon_container"
           android:layout_width="24dp"
           android:layout_height="24dp"
           android:scaleType="centerInside"
@@ -191,6 +175,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/boton_crear_cuenta"
         android:layout_width="379dp"
         android:layout_height="48dp"
         android:layout_marginLeft="16dp"
