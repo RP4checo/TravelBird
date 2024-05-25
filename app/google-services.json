@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "586148922630",
+    "project_id": "travel-bird-73248",
+    "storage_bucket": "travel-bird-73248.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586148922630:android:31ae633549c749d4ad0a87",
+        "android_client_info": {
+          "package_name": "com.travelbird"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPI1lHCLPi3wv_vkpq8nnhrKJ1cZzWYnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

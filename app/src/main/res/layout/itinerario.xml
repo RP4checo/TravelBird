@@ -32,7 +32,7 @@
       android:paddingTop="16dp">
       
       <ImageView
-        android:id="@+id/container_depth_frame55"
+        android:id="@+id/container_close"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="12dp"
@@ -807,7 +807,7 @@
     </FrameLayout>
     
     <LinearLayout
-      android:id="@+id/container_depth_frame116"
+      android:id="@+id/boton_listo"
       android:layout_width="358dp"
       android:layout_height="48dp"
       android:layout_marginLeft="16dp"

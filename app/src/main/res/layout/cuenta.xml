@@ -31,20 +31,6 @@
         android:paddingRight="16dp"
         android:paddingBottom="8dp">
 
-      <ImageView
-          android:id="@+id/container_depth_frame120"
-          android:layout_width="24dp"
-          android:layout_height="24dp"
-          android:layout_marginTop="12dp"
-          android:layout_marginBottom="12dp"
-          android:scaleType="centerInside"
-          android:src="@drawable/icon_back_flecha" />
-      <!-- 11:1025:space-view0 Depth 1, Frame 0_space_view0 space-view -->
-      <View
-          android:layout_width="0dp"
-          android:layout_height="24dp"
-          android:layout_weight="1" />
-
       <LinearLayout
           android:id="@+id/container_depth_frame121"
           android:layout_width="262dp"
@@ -54,7 +40,7 @@
 
         <LinearLayout
             android:id="@+id/container_depth_frame122"
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:gravity="left|top"
             android:orientation="vertical">
@@ -69,7 +55,7 @@
               android:singleLine="true"
               android:text="Cuenta"
               android:textColor="#FFFFFFFF"
-              android:textSize="18dp"
+              android:textSize="22dp"
               android:textStyle="bold" />
         </LinearLayout>
       </LinearLayout>

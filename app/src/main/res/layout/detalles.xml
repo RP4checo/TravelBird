@@ -29,6 +29,7 @@
       android:paddingTop="16dp">
       
       <ImageView
+        android:id="@+id/container_back_arrow"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="12dp"
@@ -69,11 +70,7 @@
         android:layout_width="0dp"
         android:layout_height="22.5dp"
         android:layout_weight="1" />
-      
-      <ImageView
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:scaleType="centerInside" />
+
     </LinearLayout>
     
     <TextView
@@ -309,6 +306,7 @@
     </FrameLayout>
     
     <LinearLayout
+      android:id="@+id/boton_favoritos"
       android:layout_width="358dp"
       android:layout_height="48dp"
       android:layout_marginLeft="16dp"
@@ -342,6 +340,7 @@
     </LinearLayout>
     
     <LinearLayout
+      android:id="@+id/boton_itinerario"
       android:layout_width="358dp"
       android:layout_height="48dp"
       android:layout_marginLeft="16dp"

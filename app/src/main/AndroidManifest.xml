@@ -12,15 +12,55 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelBird"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".Bienvenida"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".IniciarSesion"
+            android:exported="false" />
+
+        <activity
+            android:name=".CrearCuenta"
+            android:exported="false" />
+
+        <activity
+            android:name=".Inicio"
+            android:exported="false" />
+
+        <activity
+            android:name=".Explorar"
+            android:exported="false" />
+
+        <activity
+            android:name=".Itinerario"
+            android:exported="false" />
+
+        <activity
+            android:name=".Cuenta"
+            android:exported="false" />
+
+        <activity
+            android:name=".Favoritos"
+            android:exported="false" />
+
+        <activity
+            android:name=".Destino"
+            android:exported="false" />
+
+        <activity
+            android:name=".Detalles"
+            android:exported="false" />
+
+        <activity
+            android:name=".AgregarItinerario"
+            android:exported="false" />
     </application>
 
 </manifest>

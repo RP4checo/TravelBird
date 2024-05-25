@@ -1,5 +1,6 @@
 package com.travelbird
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
@@ -13,6 +14,7 @@ class Inicio : AppCompatActivity() {
     private lateinit var contenedorItinerario: LinearLayout
     private lateinit var contenedorCuenta: LinearLayout
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.inicio)
