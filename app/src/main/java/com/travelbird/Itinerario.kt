@@ -3,12 +3,12 @@ package com.travelbird
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.LinearLayout
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class Itinerario : AppCompatActivity() {
 
-    private lateinit var contenedorCerrar: LinearLayout
+    private lateinit var contenedorCerrar: ImageView
     private lateinit var botonListo: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,3 +40,4 @@ class Itinerario : AppCompatActivity() {
         finish()
     }
 }
+

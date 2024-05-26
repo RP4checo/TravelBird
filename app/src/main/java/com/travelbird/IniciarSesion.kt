@@ -44,4 +44,5 @@ class IniciarSesion : AppCompatActivity() {
         val intent = Intent(this, Inicio::class.java)  // Asumiendo que tienes una actividad llamada InicioActivity
         startActivity(intent)
     }
+
 }
