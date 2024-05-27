@@ -96,7 +96,7 @@
           android:hint="Email"
           android:inputType="textEmailAddress"
           android:textColor="#FFFFFFFF"
-          android:textSize="10sp"
+          android:textSize="18sp"
           android:gravity="center_vertical" />
 
       <ImageView
@@ -129,7 +129,7 @@
           android:hint="Nombre de usuario"
           android:inputType="text"
           android:textColor="#FFFFFFFF"
-          android:textSize="10sp"
+          android:textSize="18sp"
           android:gravity="center_vertical" />
 
       <ImageView
@@ -163,7 +163,7 @@
           android:hint="Contraseña"
           android:inputType="textPassword"
           android:textColor="#FFFFFFFF"
-          android:textSize="10sp"
+          android:textSize="18sp"
           android:gravity="center_vertical" />
 
       <ImageView
