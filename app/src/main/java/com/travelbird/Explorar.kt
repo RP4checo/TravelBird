@@ -3,22 +3,18 @@ package com.travelbird
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.LinearLayout
-import android.widget.TextView
+import androidx.appcompat.widget.SearchView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.Firebase
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.database
 import com.travelbird.databinding.ExplorarBinding
+import java.util.Locale
 
 class Explorar : AppCompatActivity() {
 
@@ -27,8 +23,6 @@ class Explorar : AppCompatActivity() {
     private lateinit var adapter: AdaptadorDestino
     var databaseReference:DatabaseReference? = null
     var eventListener: ValueEventListener? = null
-
-    private lateinit var textoBuscarDestino: TextView
     private lateinit var contenedorInicio: LinearLayout
     private lateinit var contenedorItinerario: LinearLayout
     private lateinit var contenedorCuenta: LinearLayout
@@ -73,19 +67,34 @@ class Explorar : AppCompatActivity() {
             }
         })
 
-        textoBuscarDestino = findViewById(R.id.text_buscar_destino)
+        binding.search.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String): Boolean {
+                return false
+            }
+            override fun onQueryTextChange(newText: String): Boolean {
+                searchList(newText)
+                return true
+            }
+        })
+
         contenedorInicio = findViewById(R.id.container_inicio)
         contenedorItinerario = findViewById(R.id.container_itinerario)
         contenedorCuenta = findViewById(R.id.container_cuenta)
         setupListeners()
     }
 
-    private fun setupListeners() {
-        textoBuscarDestino.setOnClickListener {
-            // Hacer el EditText manipulable para la búsqueda
-            textoBuscarDestino.isEnabled = true
-            textoBuscarDestino.requestFocus()
+    fun searchList(text: String) {
+        val searchList = java.util.ArrayList<DatoDestino>()
+        for (dataClass in dataList) {
+            if (dataClass.nombre?.lowercase()
+                    ?.contains(text.lowercase(Locale.getDefault())) == true
+            ) {
+                searchList.add(dataClass)            }
         }
+        adapter.searchDataList(searchList)
+    }
+
+    private fun setupListeners() {
 
         contenedorInicio.setOnClickListener {
             // Navegar a la pantalla de inicio

@@ -19,42 +19,21 @@
         android:background="@drawable/frame"
         android:orientation="vertical">
 
-      <LinearLayout
+      <androidx.appcompat.widget.SearchView
           android:layout_width="match_parent"
-          android:layout_height="48dp"
-          android:layout_marginLeft="16dp"
-          android:layout_marginRight="16dp"
-          android:layout_marginTop="12dp"
-          android:layout_marginBottom="12dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:layout_marginStart="12dp"
+          android:layout_marginEnd="12dp"
+          android:id="@+id/search"
+          app:iconifiedByDefault="false"
+          app:searchHintIcon="@null"
+          app:queryHint="¿Cuál será tu próximo destino?"
+          android:focusable="false"
+          app:closeIcon="@drawable/icon_close"
+          app:searchIcon="@drawable/icon_lupa"
           android:background="@drawable/frame1"
-          android:clipToPadding="false"
-          android:gravity="left|center_vertical"
-          android:orientation="horizontal"
-          android:paddingBottom="12dp"
-          android:paddingLeft="16dp"
-          android:paddingRight="16dp"
-          android:paddingTop="12dp">
-
-        <ImageView
-            android:id="@+id/lupa_destino"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/icon_lupa" />
-
-        <TextView
-            android:id="@+id/text_buscar_destino"
-            android:layout_width="290dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="12dp"
-            android:gravity="left|center_vertical"
-            android:includeFontPadding="false"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="¿Cuál será tu próximo destino?"
-            android:textColor="#FFABA6B0"
-            android:textSize="16dp" />
-      </LinearLayout>
+          android:textColor="@android:color/black"/>
 
       <TextView
           android:id="@+id/text_explorar_destinos"

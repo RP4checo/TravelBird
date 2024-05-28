@@ -43,10 +43,21 @@
             android:scaleType="centerInside"
             android:src="@drawable/icon_back_flecha" />
           <!-- 11:474:space-view0 Depth 1, Frame 0_space_view0 space-view -->
-          <View
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/paisDestino"
+                android:layout_width="270dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="11.5dp"
+                android:gravity="center|top"
+                android:includeFontPadding="false"
+                android:lineHeight="2dp"
+                android:text="Pais"
+                android:textColor="#FFFFFFFF"
+                android:textSize="22dp" />
 
         </LinearLayout>
 
@@ -57,7 +68,7 @@
           android:background="@drawable/frame">
 
           <ImageView
-            android:id="@+id/image_depth_frame2"
+            android:id="@+id/imagenDestino"
             android:layout_width="match_parent"
             android:layout_height="320dp"
             android:layout_gravity="top|left"
@@ -66,9 +77,9 @@
         </FrameLayout>
 
         <TextView
-          android:id="@+id/container_depth_frame25"
-          android:layout_width="wrap_content"
-          android:layout_height="59.5dp"
+          android:id="@+id/nombreDestino"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
           android:layout_marginLeft="16dp"
           android:layout_marginRight="16dp"
           android:layout_marginTop="20dp"
@@ -76,14 +87,31 @@
           android:gravity="left|top"
           android:includeFontPadding="false"
           android:lineHeight="27.5dp"
-          android:text="París"
+          android:text="Nombre"
           android:textColor="#FFFFFFFF"
           android:textSize="22dp" />
 
         <TextView
+            android:id="@+id/descripcionDestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="left|top"
+            android:padding="8dp"
+            android:includeFontPadding="false"
+            android:lineHeight="24sp"
+            android:text="Descripción"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+
+        <TextView
           android:id="@+id/container_depth_frame26"
           android:layout_width="wrap_content"
-          android:layout_height="59.5dp"
+          android:layout_height="wrap_content"
           android:layout_marginLeft="16dp"
           android:layout_marginRight="16dp"
           android:layout_marginTop="20dp"
@@ -203,7 +231,7 @@
         <TextView
           android:id="@+id/container_depth_frame35"
           android:layout_width="wrap_content"
-          android:layout_height="59.5dp"
+          android:layout_height="wrap_content"
           android:layout_marginLeft="16dp"
           android:layout_marginRight="16dp"
           android:layout_marginTop="20dp"

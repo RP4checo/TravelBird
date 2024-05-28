@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/recCard"
+    android:background="@drawable/frame1"
     android:layout_marginStart="12dp"
     android:layout_marginEnd="12dp"
     android:layout_marginHorizontal="10dp"
@@ -13,7 +14,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame1">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="60dp"
