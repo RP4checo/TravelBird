@@ -60,6 +60,8 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.15.1")
     annotationProcessor("com.github.bumptech.glide:compiler:4.15.1")
 
+    implementation ("com.google.code.gson:gson:2.8.6")
+
     // Importar dependencias Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     //implementation("com.google.firebase:firebase-database")

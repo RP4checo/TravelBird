@@ -64,9 +64,9 @@
             android:includeFontPadding="false"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="             Atracciones populares"
+            android:text="      Atracciones populares"
             android:textColor="#FFFFFFFF"
-            android:textSize="22dp"
+            android:textSize="24dp"
             android:textStyle="bold" />
         </LinearLayout>
 
@@ -78,22 +78,24 @@
       </LinearLayout>
 
       <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="59.5dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="11.5dp"
-        android:gravity="left|top"
-        android:includeFontPadding="false"
-        android:lineHeight="27.5dp"
-        android:text="Museo del Louvre"
-        android:textColor="#FFFFFFFF"
-        android:textSize="22dp" />
+          android:id="@+id/nombreDetalle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="16dp"
+          android:layout_marginBottom="11.5dp"
+          android:gravity="left|top"
+          android:includeFontPadding="false"
+          android:lineHeight="27.5dp"
+          android:text="Nombre"
+          android:textColor="#FFFFFFFF"
+          android:textSize="22dp" />
 
       <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="112dp"
+        android:id="@+id/descripcionDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
@@ -101,62 +103,95 @@
         android:gravity="left|top"
         android:includeFontPadding="false"
         android:lineHeight="24dp"
-        android:text="El mayor museo de arte del mundo y monumento\n histórico de París, Francia. Situado en la orilla \nderecha del Sena, en el distrito 1, es uno de los\n principales monumentos de la ciudad."
+        android:text="Descripcion"
         android:textColor="#FFFFFFFF"
         android:textSize="16dp" />
 
       <FrameLayout
-        android:layout_width="390dp"
-        android:layout_height="284dp"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
         android:background="@drawable/frame"
         android:paddingBottom="12dp"
         android:paddingTop="12dp">
 
         <ImageView
-            android:layout_width="185dp"
-            android:layout_height="260dp"
+            android:id="@+id/imgDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="top|left"
             android:scaleType="centerInside"
             android:src="@drawable/pic_museo1" />
 
-        <ImageView
-          android:layout_width="95.5dp"
-          android:layout_height="128dp"
-          android:layout_marginLeft="195dp"
-          android:layout_gravity="top|left"
-          android:scaleType="centerInside"
-          android:src="@drawable/pic_museo2" />
-
-        <ImageView
-          android:layout_width="95.5dp"
-          android:layout_height="128dp"
-          android:layout_marginLeft="295dp"
-          android:layout_gravity="top|left"
-          android:scaleType="centerInside"
-          android:src="@drawable/pic_museo3" />
-
-        <ImageView
-          android:layout_width="95.5dp"
-          android:layout_height="128dp"
-          android:layout_marginLeft="195dp"
-          android:layout_marginTop="132dp"
-          android:layout_gravity="top|left"
-          android:scaleType="centerInside"
-          android:src="@drawable/pic_museo4" />
-
-        <ImageView
-          android:layout_width="95.5dp"
-          android:layout_height="128dp"
-          android:layout_marginLeft="295dp"
-          android:layout_marginTop="132dp"
-          android:layout_gravity="top|left"
-          android:scaleType="centerInside"
-          android:src="@drawable/pic_museo6" />
       </FrameLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp"
+          android:paddingTop="16dp"
+          android:paddingBottom="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:lineHeight="22.5dp"
+            android:text="Precio:"
+            android:textColor="#FFFFFFFF"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/precioDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:lineHeight="22.5dp"
+            android:text="$$$"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18dp"
+            android:layout_marginLeft="16dp"/> <!-- Añadido margen entre los TextViews -->
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp"
+          android:paddingTop="16dp"
+          android:paddingBottom="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:lineHeight="22.5dp"
+            android:text="Ubicación:"
+            android:textColor="#FFFFFFFF"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/ubicacionDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:lineHeight="22.5dp"
+            android:text="Location"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18dp"
+            android:layout_marginLeft="16dp"/> <!-- Añadido margen entre los TextViews -->
+      </LinearLayout>
+
 
       <TextView
         android:layout_width="wrap_content"
-        android:layout_height="52dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
@@ -164,218 +199,56 @@
         android:gravity="left|top"
         android:includeFontPadding="false"
         android:lineHeight="22.5dp"
-        android:text="Lo que más gusta del Museo del Louvre"
+        android:text="Categoria"
         android:textColor="#FFFFFFFF"
-        android:textSize="18dp" />
+        android:textSize="22dp" />
 
-      <FrameLayout
-        android:layout_width="390dp"
-        android:layout_height="303dp">
-
-        <LinearLayout
-          android:layout_width="173dp"
-          android:layout_height="91dp"
+      <TextView
+          android:id="@+id/categoriaDetalle"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
           android:layout_marginLeft="16dp"
-          android:layout_marginTop="16.5dp"
-          android:layout_gravity="top|left"
-          android:background="@drawable/frame9"
+          android:layout_marginRight="16dp"
+          android:layout_marginTop="4dp"
+          android:layout_marginBottom="12dp"
           android:gravity="left|top"
-          android:orientation="vertical"
-          android:paddingBottom="16dp"
-          android:paddingLeft="16dp"
-          android:paddingRight="16dp"
-          android:paddingTop="16dp">
+          android:includeFontPadding="false"
+          android:lineHeight="24dp"
+          android:text="Lista Categorias"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
 
-          <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/icon_pincel" />
-
-          <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="21dp"
-            android:layout_marginRight="105dp"
-            android:layout_marginTop="11.5dp"
-            android:layout_marginBottom="-0.5dp"
-            android:gravity="left|center_vertical"
-            android:includeFontPadding="false"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="Arte"
-            android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-          android:layout_width="173dp"
-          android:layout_height="91dp"
-          android:layout_marginLeft="201dp"
-          android:layout_marginTop="16.5dp"
-          android:layout_gravity="top|left"
-          android:background="@drawable/frame9"
-          android:gravity="left|top"
-          android:orientation="vertical"
-          android:paddingBottom="16dp"
-          android:paddingLeft="16dp"
-          android:paddingRight="16dp"
-          android:paddingTop="16dp">
-
-          <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/icon_libro" />
-
-          <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="5dp"
-            android:gravity="left|center_vertical"
-            android:includeFontPadding="false"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="Historia"
-            android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
-        </LinearLayout>
-
-        <LinearLayout
-          android:layout_width="173dp"
-          android:layout_height="89dp"
-          android:layout_marginLeft="201dp"
-          android:layout_marginTop="143.5dp"
-          android:layout_gravity="top|left"
-          android:background="@drawable/frame9"
-          android:gravity="left|top"
-          android:orientation="vertical"
-          android:paddingBottom="16dp"
-          android:paddingLeft="16dp"
-          android:paddingRight="16dp"
-          android:paddingTop="16dp">
-
-          <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/icon_shape" />
-
-          <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="25dp"
-            android:gravity="left|top"
-            android:includeFontPadding="false"
-            android:lineHeight="20dp"
-            android:text="Pirámide"
-            android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
-        </LinearLayout>
-
-        <LinearLayout
-          android:layout_width="173dp"
-          android:layout_height="89dp"
+      <Button
+          android:id="@+id/boton_favoritos"
+          android:layout_width="358dp"
+          android:layout_height="48dp"
           android:layout_marginLeft="16dp"
-          android:layout_marginTop="143.5dp"
-          android:layout_gravity="top|left"
-          android:background="@drawable/frame9"
-          android:gravity="left|top"
-          android:orientation="vertical"
-          android:paddingBottom="16dp"
-          android:paddingLeft="16dp"
-          android:paddingRight="16dp"
-          android:paddingTop="16dp">
-
-          <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/icon_pic" />
-
-          <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="25dp"
-            android:gravity="left|top"
-            android:includeFontPadding="false"
-            android:lineHeight="20dp"
-            android:text="Mona Lisa"
-            android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
-        </LinearLayout>
-      </FrameLayout>
-
-      <LinearLayout
-        android:id="@+id/boton_favoritos"
-        android:layout_width="358dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
-        android:background="@drawable/frame2"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp">
-
-        <LinearLayout
-          android:layout_width="153dp"
-          android:layout_height="24dp"
+          android:layout_marginRight="16dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
           android:background="@drawable/frame2"
-          android:gravity="left|top"
-          android:orientation="vertical">
+          android:text="Añadir a Favorito"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp"
+          android:gravity="center"/>
 
-          <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:gravity="left|center_vertical"
-            android:includeFontPadding="false"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="Añadir a Favorito"
-            android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
-        </LinearLayout>
-      </LinearLayout>
-
-      <LinearLayout
-        android:id="@+id/boton_itinerario"
-        android:layout_width="358dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/frame2"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp">
-
-        <LinearLayout
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
+      <Button
+          android:id="@+id/boton_itinerario"
+          android:layout_width="358dp"
+          android:layout_height="48dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+          android:layout_marginTop="12dp"
           android:background="@drawable/frame2"
-          android:gravity="left|top"
-          android:orientation="vertical">
+          android:text="Agregar a Itinerario"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp"
+          android:gravity="center"/>
 
-          <TextView
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:gravity="left|center_vertical"
-            android:includeFontPadding="false"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="Agregar a Itinerario"
-            android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
-        </LinearLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="30dp"/>
 
-      </LinearLayout>
     </LinearLayout>
   </ScrollView>
 </LinearLayout>

@@ -34,7 +34,7 @@ class Explorar : AppCompatActivity() {
         setContentView(binding.root)
 
         val gridLayoutManager = GridLayoutManager(this@Explorar, 1)
-        binding.recyclerView.layoutManager = gridLayoutManager
+        binding.recyclerViewDestino.layoutManager = gridLayoutManager
         //binding.search.clearFocus()
 
         val builder = AlertDialog.Builder(this@Explorar)
@@ -45,7 +45,7 @@ class Explorar : AppCompatActivity() {
 
         dataList = ArrayList()
         adapter = AdaptadorDestino(this@Explorar, dataList)
-        binding.recyclerView.adapter = adapter
+        binding.recyclerViewDestino.adapter = adapter
         databaseReference = FirebaseDatabase.getInstance().getReference("destinos")
         dialog.show()
 
@@ -72,7 +72,7 @@ class Explorar : AppCompatActivity() {
                 return false
             }
             override fun onQueryTextChange(newText: String): Boolean {
-                searchList(newText)
+                listaExplorar(newText)
                 return true
             }
         })
@@ -83,7 +83,7 @@ class Explorar : AppCompatActivity() {
         setupListeners()
     }
 
-    fun searchList(text: String) {
+    fun listaExplorar(text: String) {
         val searchList = java.util.ArrayList<DatoDestino>()
         for (dataClass in dataList) {
             if (dataClass.nombre?.lowercase()

@@ -11,15 +11,16 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.google.gson.Gson
 
-class AdaptadorDestino(private val context: Context, private var dataList: List<DatoDestino>) : RecyclerView.Adapter<MyViewHolder>() {
+class AdaptadorDestino(private val context: Context, private var dataList: List<DatoDestino>) : RecyclerView.Adapter<MyViewHolderDestino>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolderDestino {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.recycler_item, parent, false)
-        return MyViewHolder(view)
+        return MyViewHolderDestino(view)
     }
 
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MyViewHolderDestino, position: Int) {
         Glide.with(context).load(dataList[position].imagen).into(holder.recImage)
         holder.recNombre.text = dataList[position].nombre
 
@@ -29,6 +30,9 @@ class AdaptadorDestino(private val context: Context, private var dataList: List<
             intent.putExtra("Descripción", dataList[holder.adapterPosition].descripcion)
             intent.putExtra("Nombre", dataList[holder.adapterPosition].nombre)
             intent.putExtra("Pais", dataList[holder.adapterPosition].pais)
+            intent.putExtra("Atracciones", Gson().toJson(dataList[holder.adapterPosition].atracciones))
+            intent.putExtra("Eventos", Gson().toJson(dataList[holder.adapterPosition].eventos))
+            intent.putExtra("Restaurantes", Gson().toJson(dataList[holder.adapterPosition].restaurantes))
             context.startActivity(intent)
         }
     }
@@ -44,7 +48,7 @@ class AdaptadorDestino(private val context: Context, private var dataList: List<
 
 }
 
-class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class MyViewHolderDestino(itemView: View) : RecyclerView.ViewHolder(itemView) {
     var recImage: ImageView
     var recNombre: TextView
     var recCard: CardView

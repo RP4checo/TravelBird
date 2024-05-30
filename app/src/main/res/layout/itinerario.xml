@@ -263,7 +263,7 @@
         android:paddingTop="8dp">
 
         <ImageView
-          android:id="@+id/image_depth_frame4"
+          android:id="@+id/image_depth_frame40"
           android:layout_width="40dp"
           android:layout_height="40dp"
           android:scaleType="centerInside"
