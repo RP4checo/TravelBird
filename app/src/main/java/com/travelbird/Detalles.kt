@@ -14,7 +14,7 @@ import com.travelbird.databinding.DetallesBinding
 class Detalles : AppCompatActivity() {
 
     var imageUrl = ""
-    private lateinit var contenedorFlechaAtras: ImageView
+    private lateinit var cerrarPantalla: ImageView
     private lateinit var botonFavoritos: Button
     private lateinit var botonItinerario: Button
     private lateinit var binding: DetallesBinding
@@ -31,7 +31,7 @@ class Detalles : AppCompatActivity() {
             binding.descripcionDetalle.text = bundle.getString("descripcion")
             imageUrl = bundle.getString("imagen")!!
             Glide.with(this).load(bundle.getString("imagen")).into(binding.imgDetalle)
-            binding.precioDetalle.text = bundle.getString("precio")
+            binding.precioDetalle.text = bundle.getDouble("precioEstimado").toString()
             binding.ubicacionDetalle.text = bundle.getString("ubicacion")
             // Convertir el arreglo de categorías de nuevo a lista
             val categoriasArray = bundle.getStringArray("categorias")
@@ -44,9 +44,7 @@ class Detalles : AppCompatActivity() {
             binding.categoriaDetalle.text = categoriasText
         }
 
-
-
-        contenedorFlechaAtras = findViewById(R.id.container_back_arrow)
+        cerrarPantalla = findViewById(R.id.container_back_arrow)
         botonFavoritos = findViewById(R.id.boton_favoritos)
         botonItinerario = findViewById(R.id.boton_itinerario)
 
@@ -54,9 +52,9 @@ class Detalles : AppCompatActivity() {
     }
 
     private fun setupListeners() {
-        contenedorFlechaAtras.setOnClickListener {
+        cerrarPantalla.setOnClickListener {
             // Navegar de regreso a la pantalla de Destino
-            val intent = Intent(this, Destino::class.java)
+            val intent = Intent(this, Explorar::class.java)
             startActivity(intent)
             finish()
         }
@@ -72,8 +70,13 @@ class Detalles : AppCompatActivity() {
 
         botonItinerario.setOnClickListener {
             // Navegar a la pantalla de Agregar Itinerario
-            val intent = Intent(this, AgregarItinerario::class.java)
-            startActivity(intent)
+            //val intent = Intent(this, AgregarItinerario::class.java)
+            //startActivity(intent)
+            Toast.makeText(this, "Añadido a Itinerario", Toast.LENGTH_SHORT).show()
+            // Usar un Handler para mantener el mensaje por 3 segundos
+            Handler(Looper.getMainLooper()).postDelayed({
+                Toast.makeText(this, "", Toast.LENGTH_SHORT).cancel()
+            }, 3000)
         }
     }
 }

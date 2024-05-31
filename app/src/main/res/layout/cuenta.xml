@@ -25,7 +25,7 @@
 
       <LinearLayout
           android:id="@+id/container_depth_frame119"
-          android:layout_width="390dp"
+          android:layout_width="match_parent"
           android:layout_height="72dp"
           android:background="@drawable/frame"
           android:gravity="left|center_vertical"
@@ -37,7 +37,7 @@
 
         <LinearLayout
             android:id="@+id/container_depth_frame121"
-            android:layout_width="262dp"
+            android:layout_width="match_parent"
             android:layout_height="22.5dp"
             android:gravity="left|top"
             android:orientation="vertical">
@@ -51,9 +51,9 @@
 
             <TextView
                 android:id="@+id/text_cuenta"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="25dp"
-                android:gravity="left|center_vertical"
+                android:gravity="center|center_vertical"
                 android:includeFontPadding="false"
                 android:maxLines="1"
                 android:singleLine="true"

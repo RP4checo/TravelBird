@@ -1,50 +1,59 @@
 package com.travelbird
 
 import android.content.Intent
-import android.os.Bundle
-import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import android.util.Patterns
+import com.travelbird.databinding.CrearCuentaBinding
 
 class CrearCuenta : AppCompatActivity() {
 
-    private lateinit var editTextCorreo: EditText
-    private lateinit var editTextUsuario: EditText
-    private lateinit var editTextContrasena: EditText
-    private lateinit var botonCrearCuenta: LinearLayout
+    private lateinit var binding: CrearCuentaBinding
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.crear_cuenta)
+        binding = CrearCuentaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        // Referencias a los EditText y al LinearLayout que actúa como botón
-        editTextCorreo = findViewById(R.id.emailEditText)
-        editTextUsuario = findViewById(R.id.usuarioEditText_cuenta)
-        editTextContrasena = findViewById(R.id.passwordEditText)
-        botonCrearCuenta = findViewById(R.id.boton_crear_cuenta)  // Asegúrate de agregar el ID correcto en tu XML.
+        firebaseAuth = FirebaseAuth.getInstance()
 
-        // Establecer el listener para el botón de crear cuenta
-        botonCrearCuenta.setOnClickListener {
-            if (validarCampos()) {
-                abrirIniciarSesion()
+        binding.botonCrearCuenta.setOnClickListener {
+            val email = binding.emailEditText.text.toString().trim()
+            val password = binding.passwordEditText.text.toString().trim()
+            val confirmPassword = binding.passwordConfirmText.text.toString().trim()
+
+            if (email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
+                if (isValidEmail(email)) {
+                    if (password == confirmPassword) {
+                        firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
+                            if (task.isSuccessful) {
+                                Toast.makeText(this, "Cuenta creada exitosamente.", Toast.LENGTH_SHORT).show()
+                                val intent = Intent(this, IniciarSesion::class.java)
+                                startActivity(intent)
+                            } else {
+                                Toast.makeText(this, "Error al crear cuenta: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                    } else {
+                        Toast.makeText(this, "La contraseña no coincide.", Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    Toast.makeText(this, "La dirección de correo electrónico está mal formateada.", Toast.LENGTH_SHORT).show()
+                }
             } else {
-                Toast.makeText(this, "Por favor, complete todos los campos.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Los campos no pueden estar vacíos.", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        binding.containerClose.setOnClickListener {
+            finish()
         }
     }
 
-    // Validar que los campos no estén vacíos
-    private fun validarCampos(): Boolean {
-        val correo = editTextCorreo.text.toString().trim()
-        val usuario = editTextUsuario.text.toString().trim()
-        val contrasena = editTextContrasena.text.toString().trim()
-        return correo.isNotEmpty() && usuario.isNotEmpty() && contrasena.isNotEmpty()
-    }
-
-    // Método para abrir la pantalla de iniciar sesión
-    private fun abrirIniciarSesion() {
-        val intent = Intent(this, IniciarSesion::class.java)
-        startActivity(intent)
+    private fun isValidEmail(email: CharSequence): Boolean {
+        return email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()
     }
 }

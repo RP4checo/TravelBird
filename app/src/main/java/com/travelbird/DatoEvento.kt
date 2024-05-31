@@ -5,7 +5,7 @@ class DatoEvento {
     var nombre: String? = null
     var descripcion: String? = null
     var imagen: String? = null
-    var precioEstimado: Int? = null
+    var precioEstimado: Double? = null
     var ubicacion: String? = null
     var categorias: List<String>? = null
     var fecha: String? = null
@@ -16,7 +16,7 @@ class DatoEvento {
         nombre: String?,
         descripcion: String?,
         imagen: String?,
-        precioEstimado: Int?,
+        precioEstimado: Double?,
         ubicacion: String?,
         categorias: List<String>?,
         fecha: String?,

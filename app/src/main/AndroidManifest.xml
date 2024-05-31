@@ -64,10 +64,6 @@
         <activity
             android:name=".Detalles"
             android:exported="false" />
-
-        <activity
-            android:name=".AgregarItinerario"
-            android:exported="false" />
     </application>
 
 </manifest>

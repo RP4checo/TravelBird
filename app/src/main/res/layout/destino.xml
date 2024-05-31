@@ -64,16 +64,16 @@
         <FrameLayout
           android:id="@+id/container_depth_frame24"
           android:layout_width="match_parent"
-          android:layout_height="320dp"
+          android:layout_height="200dp"
           android:background="@drawable/frame">
 
-          <ImageView
-            android:id="@+id/imagenDestino"
-            android:layout_width="match_parent"
-            android:layout_height="320dp"
-            android:layout_gravity="top|left"
-            android:scaleType="centerInside"
-            android:src="@drawable/pic_paris_1" />
+            <ImageView
+                android:id="@+id/imagenDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:scaleType="centerInside"
+                android:src="@drawable/pic_welcome" />
         </FrameLayout>
 
         <TextView
