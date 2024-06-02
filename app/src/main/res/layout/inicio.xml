@@ -127,7 +127,7 @@
               android:layout_marginTop="8dp"
               android:gravity="left"
               android:includeFontPadding="false"
-              android:text="Los mejores destinos para visitar este año"
+              android:text="Tu próxima aventura te espera"
               android:textColor="#FFFFFFFF"
               android:textSize="18dp" />
         </LinearLayout>

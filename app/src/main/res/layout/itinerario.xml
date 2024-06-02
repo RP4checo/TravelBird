@@ -1,60 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/container_itinerario"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:background="@drawable/frame3"
-  android:gravity="left|top"
-  android:orientation="vertical">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_itinerario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame3"
+    android:gravity="left|top"
+    android:orientation="vertical">
 
   <ScrollView
       android:layout_width="match_parent"
       android:layout_height="match_parent">
 
     <LinearLayout
-      android:id="@+id/container_depth_frame53"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:background="@drawable/frame"
-      android:gravity="left|top"
-      android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame"
+        android:gravity="left|top"
+        android:orientation="vertical">
 
       <LinearLayout
-        android:id="@+id/container_depth_frame54"
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:background="@drawable/frame"
-        android:gravity="left|center_vertical"
-        android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp">
+          android:id="@+id/container_depth_frame54"
+          android:layout_width="match_parent"
+          android:layout_height="72dp"
+          android:background="@drawable/frame"
+          android:gravity="left|center_vertical"
+          android:orientation="horizontal"
+          android:paddingBottom="8dp"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp"
+          android:paddingTop="16dp">
 
         <ImageView
-          android:id="@+id/container_close"
-          android:layout_width="24dp"
-          android:layout_height="24dp"
-          android:layout_marginTop="12dp"
-          android:layout_marginBottom="12dp"
-          android:scaleType="centerInside"
-          android:src="@drawable/icon_close" />
-        <!-- 11:1395:space-view0 Depth 1, Frame 0_space_view0 space-view -->
+            android:id="@+id/container_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_close" />
+
         <View
-          android:layout_width="0dp"
-          android:layout_height="24dp"
-          android:layout_weight="1" />
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1" />
 
         <LinearLayout
-          android:id="@+id/container_depth_frame56"
-          android:layout_width="262dp"
-          android:layout_height="22.5dp"
-          android:gravity="center|top"
-          android:orientation="vertical">
+            android:id="@+id/container_depth_frame56"
+            android:layout_width="262dp"
+            android:layout_height="22.5dp"
+            android:gravity="center|top"
+            android:orientation="vertical">
 
           <LinearLayout
               android:id="@+id/container_depth_frame57"
@@ -76,14 +74,12 @@
                 android:textSize="18dp"
                 android:textStyle="bold" />
           </LinearLayout>
-
         </LinearLayout>
 
         <View
-          android:layout_width="0dp"
-          android:layout_height="22.5dp"
-          android:layout_weight="1" />
-
+            android:layout_width="0dp"
+            android:layout_height="22.5dp"
+            android:layout_weight="1" />
       </LinearLayout>
 
       <FrameLayout
@@ -92,11 +88,11 @@
           android:layout_gravity="center_horizontal" >
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_marginTop="10dp"
+            android:id="@+id/recyclerViewDestino"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/recyclerViewDestino"
-            android:scrollbars="vertical"/>
+            android:scrollbars="vertical"
+            android:layout_marginTop="10dp"/>
 
       </FrameLayout>
 
@@ -115,7 +111,6 @@
           android:text="Listo"
           android:textColor="#FFFFFFFF"
           android:textSize="16dp" />
-
     </LinearLayout>
- </ScrollView>
+  </ScrollView>
 </LinearLayout>
