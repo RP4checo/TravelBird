@@ -61,4 +61,6 @@ dependencies {
     // Importar dependencias Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-storage-ktx")
+
+    implementation ("com.squareup.picasso:picasso:2.71828")
 }

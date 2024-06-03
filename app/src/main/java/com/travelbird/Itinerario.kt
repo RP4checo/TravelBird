@@ -40,9 +40,6 @@ class Itinerario : AppCompatActivity() {
 
         // Inicializar el adaptador del RecyclerView
         itinerarioAdapter = AdaptadorItinerario(itinerarioList, this,
-            onItemClickListener = { destino ->
-                Toast.makeText(this, "Información detallada de ${destino.nombre}", Toast.LENGTH_SHORT).show()
-            },
             onEditClickListener = { destino ->
                 showEditarItinerarioPopup(destino)
             },

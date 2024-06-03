@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/container_cuenta"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:background="@drawable/frame3"
-  android:gravity="left|top"
-  android:orientation="vertical">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_cuenta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame3"
+    android:gravity="left|top"
+    android:orientation="vertical">
 
   <ScrollView
       android:layout_width="match_parent"
@@ -68,14 +67,16 @@
       </LinearLayout>
 
       <ImageView
-          android:id="@+id/container_depth_frame123"
+          android:id="@+id/container_ImgPerfil"
           android:layout_width="128dp"
           android:layout_height="128dp"
           android:layout_marginLeft="131dp"
           android:layout_marginTop="16dp"
           android:layout_marginRight="131dp"
           android:scaleType="centerInside"
-          android:src="@drawable/icon_miles" />
+          android:src="@drawable/icon_miles"
+          android:clickable="true"
+          android:focusable="true" />
 
       <LinearLayout
           android:id="@+id/container_depth_frame124"
@@ -85,7 +86,9 @@
           android:layout_marginTop="16dp"
           android:layout_marginRight="114.77dp"
           android:gravity="left|top"
-          android:orientation="vertical">
+          android:orientation="vertical"
+          android:clickable="true"
+          android:focusable="true">
 
         <LinearLayout
             android:id="@+id/container_depth_frame125"
@@ -95,14 +98,14 @@
             android:orientation="vertical">
 
           <TextView
-              android:id="@+id/text_miles_morales"
+              android:id="@+id/text_Nombre"
               android:layout_width="wrap_content"
               android:layout_height="28dp"
               android:gravity="center_horizontal|center_vertical"
               android:includeFontPadding="false"
               android:maxLines="1"
               android:singleLine="true"
-              android:text="Miles Morales"
+              android:text=""
               android:textColor="#FFFFFFFF"
               android:textSize="22dp" />
         </LinearLayout>
@@ -126,7 +129,7 @@
             android:includeFontPadding="false"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="spidy_miles"
+            android:text="email"
             android:textColor="#FFABA6B0"
             android:textSize="16dp" />
       </LinearLayout>
@@ -195,13 +198,15 @@
             android:textSize="16dp" />
 
         <LinearLayout
-            android:id="@+id/container_depth_frame131"
-            android:layout_width="117.56dp"
+            android:id="@+id/container_Nombre"
+            android:layout_width="match_parent"
             android:layout_height="24dp"
             android:layout_marginLeft="16dp"
             android:clipToPadding="false"
             android:gravity="right|top"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true">
 
           <TextView
               android:id="@+id/container_depth_frame132"
@@ -211,57 +216,7 @@
               android:includeFontPadding="false"
               android:maxLines="1"
               android:singleLine="true"
-              android:text="Miles Morales"
-              android:textColor="#FFFFFFFF"
-              android:textSize="16dp" />
-        </LinearLayout>
-      </LinearLayout>
-
-      <LinearLayout
-          android:id="@+id/container_depth_frame133"
-          android:layout_width="match_parent"
-          android:layout_height="56dp"
-          android:background="@drawable/frame"
-          android:clipToPadding="false"
-          android:gravity="left|center_vertical"
-          android:orientation="horizontal"
-          android:paddingTop="16dp"
-          android:paddingBottom="16dp">
-
-        <View
-            android:layout_width="20dp"
-            android:layout_height="25dp" />
-
-        <TextView
-            android:id="@+id/container_depth_frame134"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:gravity="left|center_vertical"
-            android:includeFontPadding="false"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="Usuario"
-            android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
-
-        <LinearLayout
-            android:id="@+id/container_depth_frame135"
-            android:layout_width="117.56dp"
-            android:layout_height="24dp"
-            android:layout_marginLeft="16dp"
-            android:clipToPadding="false"
-            android:gravity="right|top"
-            android:orientation="horizontal">
-
-          <TextView
-              android:id="@+id/container_depth_frame136"
-              android:layout_width="match_parent"
-              android:layout_height="24dp"
-              android:gravity="left|center_vertical"
-              android:includeFontPadding="false"
-              android:maxLines="1"
-              android:singleLine="true"
-              android:text="spidy_miles"
+              android:text=""
               android:textColor="#FFFFFFFF"
               android:textSize="16dp" />
         </LinearLayout>
@@ -295,13 +250,15 @@
             android:textSize="16dp" />
 
         <LinearLayout
-            android:id="@+id/container_depth_frame139"
-            android:layout_width="wrap_content"
+            android:id="@+id/container_Cumple"
+            android:layout_width="match_parent"
             android:layout_height="24dp"
             android:layout_marginLeft="16dp"
             android:clipToPadding="false"
             android:gravity="right|top"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true">
 
           <TextView
               android:id="@+id/container_depth_frame140"
@@ -311,7 +268,7 @@
               android:includeFontPadding="false"
               android:maxLines="1"
               android:singleLine="true"
-              android:text="03 Julio, 2002"
+              android:text=""
               android:textColor="#FFFFFFFF"
               android:textSize="16dp" />
         </LinearLayout>
@@ -345,13 +302,15 @@
             android:textSize="16dp" />
 
         <LinearLayout
-            android:id="@+id/container_depth_frame143"
-            android:layout_width="wrap_content"
+            android:id="@+id/container_Celular"
+            android:layout_width="match_parent"
             android:layout_height="24dp"
             android:layout_marginLeft="16dp"
             android:clipToPadding="false"
             android:gravity="right|top"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true">
 
           <TextView
               android:id="@+id/container_depth_frame144"
@@ -361,7 +320,7 @@
               android:includeFontPadding="false"
               android:maxLines="1"
               android:singleLine="true"
-              android:text="(405) 439 - 3985"
+              android:text=""
               android:textColor="#FFFFFFFF"
               android:textSize="16dp" />
         </LinearLayout>
@@ -395,13 +354,15 @@
             android:textSize="16dp" />
 
         <LinearLayout
-            android:id="@+id/container_depth_frame147"
-            android:layout_width="wrap_content"
+            android:id="@+id/container_Email"
+            android:layout_width="match_parent"
             android:layout_height="24dp"
             android:layout_marginLeft="16dp"
             android:clipToPadding="false"
             android:gravity="right|top"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true">
 
           <TextView
               android:id="@+id/container_depth_frame148_1"
@@ -411,7 +372,7 @@
               android:includeFontPadding="false"
               android:maxLines="1"
               android:singleLine="true"
-              android:text="spidy_miles@gmail.com"
+              android:text=""
               android:textColor="#FFABA6B0"
               android:textSize="16dp" />
         </LinearLayout>
@@ -481,7 +442,7 @@
       <LinearLayout
           android:id="@+id/container_depth_frame153"
           android:layout_width="match_parent"
-          android:layout_height="56dp"
+          android:layout_height="80dp"
           android:background="@drawable/frame"
           android:clipToPadding="false"
           android:gravity="left|center_vertical"
@@ -684,6 +645,6 @@
         </LinearLayout>
       </LinearLayout>
 
-  </LinearLayout>
- </ScrollView>
+    </LinearLayout>
+  </ScrollView>
 </LinearLayout>

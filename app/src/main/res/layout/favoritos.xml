@@ -1,619 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/container_favoritos"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:background="@drawable/frame3"
-  android:gravity="left|top"
-  android:orientation="vertical">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_fav"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame3"
+    android:gravity="left|top"
+    android:orientation="vertical">
 
   <ScrollView
       android:layout_width="match_parent"
       android:layout_height="match_parent">
 
     <LinearLayout
-      android:id="@+id/container_depth_frame170"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:background="@drawable/frame"
-      android:gravity="left|top"
-      android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame"
+        android:gravity="left|top"
+        android:orientation="vertical">
 
       <LinearLayout
-        android:id="@+id/container_depth_frame171"
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:background="@drawable/frame"
-        android:gravity="left|center_vertical"
-        android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp">
+          android:id="@+id/container_depth_frame54"
+          android:layout_width="match_parent"
+          android:layout_height="72dp"
+          android:background="@drawable/frame"
+          android:gravity="left|center_vertical"
+          android:orientation="horizontal"
+          android:paddingBottom="8dp"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp"
+          android:paddingTop="16dp">
 
         <ImageView
-            android:id="@+id/container_depth_frame172"
-            android:layout_width="20dp"
+            android:id="@+id/container_close"
+            android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
             android:scaleType="centerInside"
             android:src="@drawable/icon_close" />
-        <!-- 33:28:space-view0 Depth 1, Frame 0_space_view0 space-view -->
+
         <View
-          android:layout_width="0dp"
-          android:layout_height="24dp"
-          android:layout_weight="1" />
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1" />
 
         <LinearLayout
-          android:id="@+id/container_depth_frame173"
-          android:layout_width="262dp"
-          android:layout_height="22.5dp"
-          android:gravity="left|top"
-          android:orientation="vertical">
-
-          <LinearLayout
-            android:id="@+id/container_depth_frame174"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="left|top"
+            android:id="@+id/container_depth_frame56"
+            android:layout_width="262dp"
+            android:layout_height="22.5dp"
+            android:gravity="center|top"
             android:orientation="vertical">
 
+          <LinearLayout
+              android:id="@+id/container_depth_frame57"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical">
+
             <TextView
-              android:id="@+id/text_favoritos"
-              android:layout_width="wrap_content"
-              android:layout_height="23dp"
-              android:gravity="left|center_vertical"
-              android:includeFontPadding="false"
-              android:maxLines="1"
-              android:singleLine="true"
-              android:text="Favoritos"
-              android:textColor="#FFFFFFFF"
-              android:textSize="18dp"
-              android:textStyle="bold" />
+                android:id="@+id/text_actividades"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Favoritos"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
           </LinearLayout>
         </LinearLayout>
-        <!-- 33:28:space-view1 Depth 1, Frame 0_space_view1 space-view -->
-        <View
-          android:layout_width="0dp"
-          android:layout_height="22.5dp"
-          android:layout_weight="1" />
 
-        <ImageView
-          android:id="@+id/container_depth_frame175"
-          android:layout_width="48dp"
-          android:layout_height="48dp"
-          android:scaleType="centerInside" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="22.5dp"
+            android:layout_weight="1" />
       </LinearLayout>
 
-      <TextView
-        android:id="@+id/container_depth_frame176"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="11.5dp"
-        android:gravity="left|top"
-        android:includeFontPadding="false"
-        android:lineHeight="27.5dp"
-        android:text="Destinos Favoritos"
-        android:textColor="#FFFFFFFF"
-        android:textSize="22dp" />
-
-      <LinearLayout
-        android:id="@+id/container_depth_frame177"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/frame"
-        android:clipToPadding="false"
-        android:gravity="left|center_vertical"
-        android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
-
-        <View
-            android:layout_width="20dp"
-            android:layout_height="25dp" />
-
-        <ImageView
-          android:id="@+id/image_depth_frame2"
-          android:layout_width="40dp"
-          android:layout_height="40dp"
-          android:scaleType="centerInside"
-          android:src="@drawable/pic_paris" />
-
-        <TextView
-          android:id="@+id/container_depth_frame178"
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
-          android:layout_marginLeft="16dp"
-          android:gravity="left|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Torre Eiffel"
-          android:textColor="#FFFFFFFF"
-          android:textSize="16dp" />
-
-        <LinearLayout
-          android:id="@+id/container_depth_frame179"
+      <FrameLayout
           android:layout_width="match_parent"
-          android:layout_height="32dp"
-          android:layout_marginLeft="10dp"
-          android:gravity="left|top"
-          android:orientation="horizontal">
+          android:layout_height="800dp"
+          android:layout_gravity="center_horizontal" >
 
-          <LinearLayout
-            android:id="@+id/container_depth_frame180"
-            android:layout_width="84dp"
-            android:layout_height="32dp"
-            android:background="@drawable/frame1"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
-
-            <LinearLayout
-              android:id="@+id/container_depth_frame181"
-              android:layout_width="64dp"
-              android:layout_height="21dp"
-              android:background="@drawable/frame1"
-              android:gravity="left|top"
-              android:orientation="vertical">
-
-              <TextView
-                android:id="@+id/text_detalles"
-                android:layout_width="match_parent"
-                android:layout_height="21dp"
-                android:gravity="left|center_vertical"
-                android:includeFontPadding="false"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="  Detalles"
-                android:textColor="#FFFFFFFF"
-                android:textSize="14dp" />
-            </LinearLayout>
-          </LinearLayout>
-        </LinearLayout>
-      </LinearLayout>
-
-      <LinearLayout
-        android:id="@+id/container_depth_frame182"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/frame"
-        android:clipToPadding="false"
-        android:gravity="left|center_vertical"
-        android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
-
-        <View
-            android:layout_width="20dp"
-            android:layout_height="25dp" />
-
-        <ImageView
-          android:id="@+id/image_depth_frame183"
-          android:layout_width="40dp"
-          android:layout_height="40dp"
-          android:scaleType="centerInside"
-          android:src="@drawable/pic_museo3" />
-
-        <TextView
-          android:id="@+id/container_depth_frame184"
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
-          android:layout_marginLeft="16dp"
-          android:gravity="left|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Museo del Louvre"
-          android:textColor="#FFFFFFFF"
-          android:textSize="16dp" />
-
-        <LinearLayout
-          android:id="@+id/container_depth_frame185"
-          android:layout_width="84dp"
-          android:layout_height="32dp"
-          android:layout_marginLeft="16dp"
-          android:gravity="right|top"
-          android:orientation="horizontal">
-
-          <LinearLayout
-            android:id="@+id/container_depth_frame186"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDestino"
             android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:background="@drawable/frame1"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginTop="10dp"/>
 
-            <LinearLayout
-              android:id="@+id/container_depth_frame187"
-              android:layout_width="62dp"
-              android:layout_height="21dp"
-              android:background="@drawable/frame1"
-              android:gravity="left|top"
-              android:orientation="vertical">
+      </FrameLayout>
 
-              <TextView
-                android:id="@+id/text_detalles1"
-                android:layout_width="match_parent"
-                android:layout_height="21dp"
-                android:gravity="left|center_vertical"
-                android:includeFontPadding="false"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="  Detalles"
-                android:textColor="#FFFFFFFF"
-                android:textSize="14dp" />
-            </LinearLayout>
-          </LinearLayout>
-        </LinearLayout>
-      </LinearLayout>
-
-      <LinearLayout
-        android:id="@+id/container_depth_frame188"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/frame"
-        android:clipToPadding="false"
-        android:gravity="left|center_vertical"
-        android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
-
-        <View
-            android:layout_width="20dp"
-            android:layout_height="25dp" />
-
-        <ImageView
-          android:id="@+id/image_depth_frame4"
-          android:layout_width="40dp"
-          android:layout_height="40dp"
-          android:scaleType="centerInside"
-          android:src="@drawable/pic_notredam" />
-
-        <TextView
-          android:id="@+id/container_depth_frame189"
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
+      <Button
+          android:id="@+id/boton_listo"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
           android:layout_marginLeft="16dp"
-          android:gravity="left|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Catedral de Notre-Dame"
-          android:textColor="#FFFFFFFF"
-          android:textSize="16dp" />
-
-        <LinearLayout
-          android:id="@+id/container_depth_frame190"
-          android:layout_width="84dp"
-          android:layout_height="32dp"
-          android:layout_marginLeft="16dp"
-          android:gravity="right|top"
-          android:orientation="horizontal">
-
-          <LinearLayout
-            android:id="@+id/container_depth_frame191"
-            android:layout_width="84dp"
-            android:layout_height="32dp"
-            android:background="@drawable/frame1"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
-
-            <LinearLayout
-              android:id="@+id/container_depth_frame192"
-              android:layout_width="62dp"
-              android:layout_height="21dp"
-              android:background="@drawable/frame1"
-              android:gravity="left|top"
-              android:orientation="vertical">
-
-              <TextView
-                android:id="@+id/text_detalles2"
-                android:layout_width="match_parent"
-                android:layout_height="21dp"
-                android:gravity="left|center_vertical"
-                android:includeFontPadding="false"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="  Detalles"
-                android:textColor="#FFFFFFFF"
-                android:textSize="14dp" />
-            </LinearLayout>
-          </LinearLayout>
-        </LinearLayout>
-      </LinearLayout>
-
-      <LinearLayout
-        android:id="@+id/container_depth_frame193"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/frame"
-        android:clipToPadding="false"
-        android:gravity="left|center_vertical"
-        android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
-
-        <View
-            android:layout_width="20dp"
-            android:layout_height="25dp" />
-
-        <ImageView
-          android:id="@+id/image_depth_frame5"
-          android:layout_width="40dp"
-          android:layout_height="40dp"
-          android:scaleType="centerInside"
-          android:src="@drawable/pic_crucero" />
-
-        <TextView
-          android:id="@+id/container_depth_frame194"
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
-          android:layout_marginLeft="16dp"
-          android:gravity="left|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Crucero por el Sena"
-          android:textColor="#FFFFFFFF"
-          android:textSize="16dp" />
-
-        <LinearLayout
-          android:id="@+id/container_depth_frame195"
-          android:layout_width="84dp"
-          android:layout_height="32dp"
-          android:layout_marginLeft="16dp"
-          android:gravity="right|top"
-          android:orientation="horizontal">
-
-          <LinearLayout
-            android:id="@+id/container_depth_frame196"
-            android:layout_width="84dp"
-            android:layout_height="32dp"
-            android:background="@drawable/frame1"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
-
-            <LinearLayout
-              android:id="@+id/container_depth_frame197"
-              android:layout_width="62dp"
-              android:layout_height="21dp"
-              android:background="@drawable/frame1"
-              android:gravity="left|top"
-              android:orientation="vertical">
-
-              <TextView
-                  android:id="@+id/text_detalles3"
-                  android:layout_width="match_parent"
-                  android:layout_height="21dp"
-                  android:gravity="left|center_vertical"
-                  android:includeFontPadding="false"
-                  android:maxLines="1"
-                  android:singleLine="true"
-                  android:text="  Detalles"
-                  android:textColor="#FFFFFFFF"
-                  android:textSize="14dp" />
-            </LinearLayout>
-          </LinearLayout>
-        </LinearLayout>
-      </LinearLayout>
-
-      <LinearLayout
-        android:id="@+id/container_depth_frame198"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/frame"
-        android:clipToPadding="false"
-        android:gravity="left|center_vertical"
-        android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
-
-        <View
-            android:layout_width="20dp"
-            android:layout_height="25dp" />
-
-        <ImageView
-            android:id="@+id/image_depth_frame199"
-            android:layout_width="31dp"
-            android:layout_height="40dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/pic_museo1" />
-
-        <TextView
-          android:id="@+id/container_depth_frame200"
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
-          android:layout_marginLeft="16dp"
-          android:gravity="left|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Museo del Louvre VIP"
-          android:textColor="#FFFFFFFF"
-          android:textSize="16dp" />
-
-        <LinearLayout
-          android:id="@+id/container_depth_frame201"
-          android:layout_width="84dp"
-          android:layout_height="32dp"
-          android:layout_marginLeft="16dp"
-          android:gravity="right|top"
-          android:orientation="horizontal">
-
-          <LinearLayout
-            android:id="@+id/container_depth_frame202"
-            android:layout_width="84dp"
-            android:layout_height="32dp"
-            android:background="@drawable/frame1"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
-
-            <LinearLayout
-              android:id="@+id/container_depth_frame203"
-              android:layout_width="62dp"
-              android:layout_height="21dp"
-              android:background="@drawable/frame1"
-              android:gravity="left|top"
-              android:orientation="vertical">
-
-              <TextView
-                android:id="@+id/text_detalles4"
-                android:layout_width="match_parent"
-                android:layout_height="21dp"
-                android:gravity="left|center_vertical"
-                android:includeFontPadding="false"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="  Detalles"
-                android:textColor="#FFFFFFFF"
-                android:textSize="14dp" />
-            </LinearLayout>
-          </LinearLayout>
-        </LinearLayout>
-      </LinearLayout>
-
-      <LinearLayout
-        android:id="@+id/container_depth_frame204"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/frame"
-        android:clipToPadding="false"
-        android:gravity="left|center_vertical"
-        android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
-
-        <View
-            android:layout_width="20dp"
-            android:layout_height="25dp" />
-        <ImageView
-          android:id="@+id/image_depth_frame205"
-          android:layout_width="40dp"
-          android:layout_height="40dp"
-          android:scaleType="centerInside"
-          android:src="@drawable/pic_disney" />
-
-        <TextView
-          android:id="@+id/container_depth_frame206"
-          android:layout_width="wrap_content"
-          android:layout_height="24dp"
-          android:layout_marginLeft="16dp"
-          android:gravity="left|center_vertical"
-          android:includeFontPadding="false"
-          android:maxLines="1"
-          android:singleLine="true"
-          android:text="Disneylandia París"
-          android:textColor="#FFFFFFFF"
-          android:textSize="16dp" />
-
-        <LinearLayout
-          android:id="@+id/container_depth_frame207"
-          android:layout_width="84dp"
-          android:layout_height="32dp"
-          android:layout_marginLeft="16dp"
-          android:gravity="right|top"
-          android:orientation="horizontal">
-
-          <LinearLayout
-            android:id="@+id/container_depth_frame208"
-            android:layout_width="84dp"
-            android:layout_height="32dp"
-            android:background="@drawable/frame1"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
-
-            <LinearLayout
-              android:id="@+id/container_depth_frame209"
-              android:layout_width="62dp"
-              android:layout_height="21dp"
-              android:background="@drawable/frame1"
-              android:gravity="left|top"
-              android:orientation="vertical">
-
-              <TextView
-                android:id="@+id/text_detalles5"
-                android:layout_width="match_parent"
-                android:layout_height="21dp"
-                android:gravity="left|center_vertical"
-                android:includeFontPadding="false"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text=" Detalles"
-                android:textColor="#FFFFFFFF"
-                android:textSize="14dp" />
-            </LinearLayout>
-          </LinearLayout>
-        </LinearLayout>
-      </LinearLayout>
-
-      <LinearLayout
-        android:id="@+id/container_depth_frame210"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/frame"
-        android:gravity="left|top"
-        android:orientation="vertical"
-        android:paddingBottom="271dp"
-        android:paddingTop="24dp">
-
-      </LinearLayout>
-
-      <LinearLayout
-        android:id="@+id/container_depth_frame211"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
-        android:background="@drawable/frame2"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp">
-
-        <LinearLayout
-          android:id="@+id/container_depth_frame212"
-          android:layout_width="42.56dp"
-          android:layout_height="24dp"
+          android:layout_marginRight="16dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
           android:background="@drawable/frame2"
-          android:gravity="left|top"
-          android:orientation="vertical">
-
-          <TextView
-            android:id="@+id/text_listo"
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:gravity="left|center_vertical"
-            android:includeFontPadding="false"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="Listo"
-            android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
-        </LinearLayout>
-      </LinearLayout>
-
-  </LinearLayout>
- </ScrollView>
+          android:gravity="center"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp"
+          android:text="Listo"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp" />
+    </LinearLayout>
+  </ScrollView>
 </LinearLayout>

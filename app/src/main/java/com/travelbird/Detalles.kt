@@ -5,8 +5,6 @@ import android.app.AlertDialog
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.widget.Button
 import android.widget.DatePicker
 import android.widget.ImageView
@@ -69,12 +67,29 @@ class Detalles : AppCompatActivity() {
         }
 
         botonFavoritos.setOnClickListener {
-            // Mostrar mensaje de "Añadido a favoritos"
-            Toast.makeText(this, "Añadido a favoritos", Toast.LENGTH_SHORT).show()
-            // Usar un Handler para mantener el mensaje por 3 segundos
-            Handler(Looper.getMainLooper()).postDelayed({
-                Toast.makeText(this, "", Toast.LENGTH_SHORT).cancel()
-            }, 3000)
+            // Obtener el ID del lugar (atracción, evento o restaurante)
+            val id = intent.getStringExtra("id")
+            val nombre = binding.nombreDetalle.text.toString()
+            val imagen = imageUrl
+            val categoria = binding.categoriaDetalle.text.toString()
+
+            // Obtener el ID del usuario actual
+            val userId = FirebaseAuth.getInstance().currentUser?.uid
+
+            // Validar si el usuario está autenticado
+            if (userId != null) {
+                // Crear un objeto DatoFavorito
+                val datoFavorito = DatoFavorito(id!!, nombre, imagen, categoria)
+
+                // Agregar el favorito a Firebase
+                addFavoritoToFirebase(datoFavorito)
+
+                // Mostrar mensaje de éxito
+                Toast.makeText(this, "$nombre añadido a favoritos", Toast.LENGTH_SHORT).show()
+            } else {
+                // Mostrar mensaje de error si no está autenticado
+                Toast.makeText(this, "Debes iniciar sesión para agregar a favoritos", Toast.LENGTH_SHORT).show()
+            }
         }
 
         botonItinerario.setOnClickListener {
@@ -140,5 +155,14 @@ class Detalles : AppCompatActivity() {
         val itinerarioKey = itinerarioRef.push().key // Genera una clave única para el itinerario
         datoItinerario.imagen = imageUrl // Asignar la URL de la imagen
         itinerarioRef.child(itinerarioKey!!).setValue(datoItinerario)
+    }
+
+    private fun addFavoritoToFirebase(datoFavorito: DatoFavorito) {
+        val database = FirebaseDatabase.getInstance()
+        val userId = FirebaseAuth.getInstance().currentUser?.uid
+        val favoritoRef = database.getReference("favoritos/$userId")
+
+        val favoritoKey = favoritoRef.push().key // Genera una clave única para el favorito
+        favoritoRef.child(favoritoKey!!).setValue(datoFavorito)
     }
 }

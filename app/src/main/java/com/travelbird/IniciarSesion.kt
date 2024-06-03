@@ -12,12 +12,14 @@ class IniciarSesion : AppCompatActivity() {
 
     private lateinit var binding: IniciarSesionBinding
     private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var sessionManager: GestorSesion
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = IniciarSesionBinding.inflate(layoutInflater)
         setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
+        sessionManager = GestorSesion(this)
 
         binding.botonIniciarSesion.setOnClickListener {
             val email = binding.emailEditText.text.toString().trim()
@@ -27,6 +29,24 @@ class IniciarSesion : AppCompatActivity() {
                 if (emailValido(email)) {
                     firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
                         if (task.isSuccessful) {
+                            // Obtén el correo electrónico del usuario actual
+                            val currentUser = firebaseAuth.currentUser
+                            val email = currentUser?.uid // Obtiene el correo electrónico desde el UID
+
+                            // ... (resto del código) ...
+
+                            val datoUsuario = DatoUsuario(
+                                currentUser?.uid,
+                                currentUser?.displayName,
+                                email, // Usa el correo electrónico obtenido
+                                null, // No se guarda la contraseña
+                                currentUser?.phoneNumber,
+                                null,
+                                null,
+                                null,
+                                null
+                            )
+                            sessionManager.saveUser(datoUsuario)
                             val intent = Intent(this, Inicio::class.java)
                             startActivity(intent)
                         } else {

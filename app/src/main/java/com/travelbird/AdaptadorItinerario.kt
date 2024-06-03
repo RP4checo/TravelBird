@@ -15,7 +15,6 @@ import com.google.gson.Gson
 class AdaptadorItinerario(
     private val itinerarioList: MutableList<DatoItinerario>,
     private val context: Context,
-    private val onItemClickListener: (DatoItinerario) -> Unit,
     private val onEditClickListener: (DatoItinerario) -> Unit,
     private val onDeleteClickListener: (DatoItinerario) -> Unit
 ) : RecyclerView.Adapter<AdaptadorItinerario.ViewHolder>() {
@@ -51,15 +50,6 @@ class AdaptadorItinerario(
 
         holder.botonEliminar.setOnClickListener {
             onDeleteClickListener.invoke(destino)
-        }
-
-        holder.itemView.setOnClickListener {
-            onItemClickListener.invoke(destino)
-            val intent = Intent(context, Destino::class.java)
-            intent.putExtra("Imagen", destino.imagen)
-            intent.putExtra("Nombre", destino.nombre)
-            // ... Agregar otras claves necesarias (Descripción, Pais, etc.)
-            context.startActivity(intent)
         }
     }
 
