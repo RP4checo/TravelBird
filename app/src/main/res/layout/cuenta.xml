@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/frame"
-        android:gravity="left|top"
+        android:gravity="center|top"
         android:orientation="vertical">
 
       <LinearLayout
@@ -67,108 +67,56 @@
       </LinearLayout>
 
       <ImageView
-          android:id="@+id/container_ImgPerfil"
-          android:layout_width="128dp"
-          android:layout_height="128dp"
-          android:layout_marginLeft="131dp"
-          android:layout_marginTop="16dp"
-          android:layout_marginRight="131dp"
-          android:scaleType="centerInside"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:id="@+id/profileImg"
+          android:layout_marginTop="30dp"
           android:src="@drawable/icon_miles"
-          android:clickable="true"
-          android:focusable="true" />
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"/>
 
-      <LinearLayout
-          android:id="@+id/container_depth_frame124"
-          android:layout_width="160.47dp"
-          android:layout_height="27.5dp"
-          android:layout_marginLeft="114.77dp"
-          android:layout_marginTop="16dp"
-          android:layout_marginRight="114.77dp"
-          android:gravity="left|top"
-          android:orientation="vertical"
-          android:clickable="true"
-          android:focusable="true">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/titleName"
+          android:layout_marginTop="10dp"
+          android:text="Nombre"
+          android:textColor="@color/white"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="@id/profileImg"
+          app:layout_constraintStart_toStartOf="@id/profileImg"
+          app:layout_constraintTop_toBottomOf="@id/profileImg"/>
 
-        <LinearLayout
-            android:id="@+id/container_depth_frame125"
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/titleUsername"
+          android:text="username"
+          android:textColor="@color/white"
+          android:textSize="18sp"
+          app:layout_constraintEnd_toEndOf="@id/titleName"
+          app:layout_constraintStart_toStartOf="@id/titleName"
+          app:layout_constraintTop_toBottomOf="@id/titleName"/>
+
+        <Button
+            android:id="@+id/boton_favoritos"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal|top"
-            android:orientation="vertical">
-
-          <TextView
-              android:id="@+id/text_Nombre"
-              android:layout_width="wrap_content"
-              android:layout_height="28dp"
-              android:gravity="center_horizontal|center_vertical"
-              android:includeFontPadding="false"
-              android:maxLines="1"
-              android:singleLine="true"
-              android:text=""
-              android:textColor="#FFFFFFFF"
-              android:textSize="22dp" />
-        </LinearLayout>
-      </LinearLayout>
-
-      <LinearLayout
-          android:id="@+id/container_depth_frame126"
-          android:layout_width="84.63dp"
-          android:layout_height="24dp"
-          android:layout_marginLeft="152.69dp"
-          android:layout_marginRight="152.69dp"
-          android:layout_marginBottom="16dp"
-          android:gravity="center_horizontal|top"
-          android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/text_spidy_miles"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:gravity="center_horizontal|center_vertical"
-            android:includeFontPadding="false"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="email"
-            android:textColor="#FFABA6B0"
-            android:textSize="16dp" />
-      </LinearLayout>
-
-      <FrameLayout
-          android:id="@+id/container_depth_frame127"
-          android:layout_width="match_parent"
-          android:layout_height="66dp"
-          android:background="@drawable/frame">
-
-        <LinearLayout
-            android:id="@+id/container_depth_frame128"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_gravity="top|left"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
             android:background="@drawable/frame2"
-            android:gravity="left|top"
-            android:orientation="vertical"
-            android:paddingLeft="20dp"
-            android:paddingTop="12dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="12dp">
+            android:text="Favoritos"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16dp"
+            android:gravity="center"/>
 
-          <TextView
-              android:id="@+id/text_lista_favoritos"
-              android:layout_width="match_parent"
-              android:layout_height="24dp"
-              android:gravity="center"
-              android:includeFontPadding="false"
-              android:maxLines="1"
-              android:singleLine="true"
-              android:text="Lista de Favoritos"
-              android:textColor="#FFFFFFFF"
-              android:textSize="16dp" />
-        </LinearLayout>
-      </FrameLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="10dp" />
 
       <LinearLayout
           android:id="@+id/container_depth_frame129"
@@ -195,7 +143,9 @@
             android:singleLine="true"
             android:text="Nombre"
             android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
 
         <LinearLayout
             android:id="@+id/container_Nombre"
@@ -209,9 +159,9 @@
             android:focusable="true">
 
           <TextView
-              android:id="@+id/container_depth_frame132"
+              android:id="@+id/textNombre"
               android:layout_width="match_parent"
-              android:layout_height="24dp"
+              android:layout_height="30dp"
               android:gravity="left|center_vertical"
               android:includeFontPadding="false"
               android:maxLines="1"
@@ -238,16 +188,17 @@
             android:layout_height="25dp" />
 
         <TextView
-            android:id="@+id/container_depth_frame138"
+            android:id="@+id/container_Email"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
             android:gravity="left|center_vertical"
             android:includeFontPadding="false"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Cumpleaños"
+            android:text="Email"
             android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:id="@+id/container_Cumple"
@@ -261,9 +212,9 @@
             android:focusable="true">
 
           <TextView
-              android:id="@+id/container_depth_frame140"
+              android:id="@+id/textEmail"
               android:layout_width="match_parent"
-              android:layout_height="24dp"
+              android:layout_height="30dp"
               android:gravity="left|center_vertical"
               android:includeFontPadding="false"
               android:maxLines="1"
@@ -290,16 +241,17 @@
             android:layout_height="25dp" />
 
         <TextView
-            android:id="@+id/container_depth_frame142"
+            android:id="@+id/container_Usuario"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
             android:gravity="left|center_vertical"
             android:includeFontPadding="false"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Celular"
+            android:text="Usuario"
             android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:id="@+id/container_Celular"
@@ -313,9 +265,9 @@
             android:focusable="true">
 
           <TextView
-              android:id="@+id/container_depth_frame144"
+              android:id="@+id/textUsuario"
               android:layout_width="match_parent"
-              android:layout_height="24dp"
+              android:layout_height="30dp"
               android:gravity="left|center_vertical"
               android:includeFontPadding="false"
               android:maxLines="1"
@@ -326,61 +278,10 @@
         </LinearLayout>
       </LinearLayout>
 
-      <LinearLayout
-          android:id="@+id/container_depth_frame145"
-          android:layout_width="match_parent"
-          android:layout_height="56dp"
-          android:background="@drawable/frame"
-          android:clipToPadding="false"
-          android:gravity="left|center_vertical"
-          android:orientation="horizontal"
-          android:paddingTop="16dp"
-          android:paddingBottom="16dp">
-
-        <View
-            android:layout_width="20dp"
-            android:layout_height="25dp" />
-
-        <TextView
-            android:id="@+id/container_depth_frame146"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:gravity="left|center_vertical"
-            android:includeFontPadding="false"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="Email"
-            android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
-
-        <LinearLayout
-            android:id="@+id/container_Email"
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:layout_marginLeft="16dp"
-            android:clipToPadding="false"
-            android:gravity="right|top"
-            android:orientation="horizontal"
-            android:clickable="true"
-            android:focusable="true">
-
-          <TextView
-              android:id="@+id/container_depth_frame148_1"
-              android:layout_width="match_parent"
-              android:layout_height="24dp"
-              android:gravity="left|center_vertical"
-              android:includeFontPadding="false"
-              android:maxLines="1"
-              android:singleLine="true"
-              android:text=""
-              android:textColor="#FFABA6B0"
-              android:textSize="16dp" />
-        </LinearLayout>
-      </LinearLayout>
 
       <LinearLayout
           android:id="@+id/container_depth_frame148"
-          android:layout_width="390dp"
+          android:layout_width="match_parent"
           android:layout_height="56dp"
           android:background="@drawable/frame"
           android:clipToPadding="false"
@@ -403,7 +304,8 @@
             android:singleLine="true"
             android:text="Contraseña"
             android:textColor="#FFFFFFFF"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:id="@+id/container_depth_frame150"
@@ -437,12 +339,13 @@
           android:lineHeight="22.5dp"
           android:text="Soporte"
           android:textColor="#FFFFFFFF"
-          android:textSize="18dp" />
+          android:textSize="18dp"
+          android:textStyle="bold" />
 
       <LinearLayout
           android:id="@+id/container_depth_frame153"
           android:layout_width="match_parent"
-          android:layout_height="80dp"
+          android:layout_height="50dp"
           android:background="@drawable/frame"
           android:clipToPadding="false"
           android:gravity="left|center_vertical"
@@ -486,8 +389,26 @@
       </LinearLayout>
 
       <View
-          android:layout_width="20dp"
-          android:layout_height="25dp" />
+          android:layout_width="match_parent"
+          android:layout_height="50dp" />
+
+      <Button
+          android:id="@+id/botonLogout"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
+          android:background="@drawable/frame1"
+          android:text="Cerrar Sesión"
+          android:textColor="#FFFFFFFF"
+          android:textSize="16dp"
+          android:gravity="center"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="30dp" />
 
       <LinearLayout
           android:id="@+id/container_depth_frame157"

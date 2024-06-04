@@ -1,0 +1,304 @@
+{
+  "destinos": [
+    {
+      "atracciones": [
+        {
+          "categorias": [
+            "arquitectura",
+            "historia"
+          ],
+          "descripcion": "Ícono de París y una de las estructuras más reconocibles del mundo.",
+          "id": "atraccion1",
+          "imagen": "https://www.civitatis.com/f/francia/paris/subida-torre-eiffel-589x392.jpg",
+          "nombre": "Torre Eiffel",
+          "precioEstimado": 25,
+          "ubicacion": "París, Francia"
+        }
+      ],
+      "ciudad": "París",
+      "descripcion": "Ciudad del amor, la luz y la moda.",
+      "eventos": [
+        {
+          "categorias": [
+            "música",
+            "festival"
+          ],
+          "descripcion": "Festival de música rock en el Domaine National de Saint-Cloud.",
+          "fecha": "2024-08-25",
+          "hora": "18:00",
+          "id": "evento1",
+          "imagen": "https://www.shutterstock.com/editorial/image-editorial/MfT3Q2x8O8Tbg3w5MDY4OTg=/people-attend-rock-en-seine-music-festival-440nw-14069158c.jpg",
+          "nombre": "Festival de Música Rock en Seine",
+          "precioEstimado": 80,
+          "ubicacion": "París, Francia"
+        }
+      ],
+      "id": "destino1",
+      "imagen": "https://viajes.nationalgeographic.com.es/medio/2022/07/13/paris_37bc088a_1280x720.jpg",
+      "nombre": "París",
+      "pais": "Francia",
+      "restaurantes": [
+        {
+          "descripcion": "Restaurante con tres estrellas Michelin en París.",
+          "id": "restaurante1",
+          "imagen": "https://media.timeout.com/images/105571677/image.jpg",
+          "nombre": "L'Arpège",
+          "precioEstimado": 300,
+          "tipoComida": "Francesa",
+          "ubicacion": "París, Francia"
+        }
+      ],
+      "ubicacion": "París, Francia"
+    },
+    {
+      "atracciones": [
+        {
+          "categorias": [
+            "observación",
+            "arquitectura"
+          ],
+          "descripcion": "Torre de radiodifusión y observación en Tokio, Japón.",
+          "id": "atraccion2",
+          "imagen": "https://preview.free3d.com/img/2020/01/2374250402452342403/ifztybac.jpg",
+          "nombre": "Tokyo Skytree",
+          "precioEstimado": 30,
+          "ubicacion": "Tokio, Japón"
+        }
+      ],
+      "ciudad": "Tokio",
+      "descripcion": "Metrópolis vibrante con una mezcla única de tradición y modernidad.",
+      "eventos": [
+        {
+          "categorias": [
+            "música",
+            "festival"
+          ],
+          "descripcion": "Festival de música al aire libre en Namazu, Japón.",
+          "fecha": "2024-07-28",
+          "hora": "12:00",
+          "id": "evento2",
+          "imagen": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/c2/c3/71/caption.jpg?w=1200&h=-1&s=1",
+          "nombre": "Festival de Verano de Fuji Rock",
+          "precioEstimado": 150,
+          "ubicacion": "Namazu, Japón"
+        }
+      ],
+      "id": "destino2",
+      "imagen": "https://media.admagazine.com/photos/618a5ef1a8ad6c5249a74d1d/4:3/w_2000,h_1500,c_limit/91683.jpg",
+      "nombre": "Tokio",
+      "pais": "Japón",
+      "restaurantes": [
+        {
+          "descripcion": "Restaurante de sushi con tres estrellas Michelin en Tokio.",
+          "id": "restaurante2",
+          "imagen": "https://media.cnn.com/api/v1/images/stellar/prod/120503045620-tokyo-sushi-jiro.jpg?q=w_1920,h_1080,x_0,y_0,c_fill",
+          "nombre": "Sukiyabashi Jiro",
+          "precioEstimado": 400,
+          "tipoComida": "Japonesa",
+          "ubicacion": "Tokio, Japón"
+        }
+      ],
+      "ubicacion": "Tokio, Japón"
+    },
+    {
+      "atracciones": [
+        {
+          "categorias": [
+            "observación",
+            "atracción"
+          ],
+          "descripcion": "Noria gigante en la ribera sur del río Támesis en Londres.",
+          "id": "atraccion3",
+          "imagen": "https://s.yimg.com/ny/api/res/1.2/mAX2EClymsIc1R9Wpf7Ixw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/evening_standard_239/679af1865b6895579ed7c29980ca374d",
+          "nombre": "London Eye",
+          "precioEstimado": 40,
+          "ubicacion": "Londres, Reino Unido"
+        }
+      ],
+      "ciudad": "Londres",
+      "descripcion": "Capital cosmopolita con una rica historia y cultura.",
+      "eventos": [
+        {
+          "categorias": [
+            "cultura",
+            "festival"
+          ],
+          "descripcion": "Festival callejero anual en Londres.",
+          "fecha": "2024-08-26",
+          "hora": "10:00",
+          "id": "evento3",
+          "imagen": "https://www.londres.org.es/wp-content/uploads/2020/04/carnaval-notting-hill.jpg",
+          "nombre": "Carnaval de Notting Hill",
+          "precioEstimado": 0,
+          "ubicacion": "Londres, Reino Unido"
+        }
+      ],
+      "id": "destino3",
+      "imagen": "https://www.iese.edu/es/insight/wp-content/uploads/sites/4/2022/11/Londres-Cities-in-motion-1024-alto.jpg",
+      "nombre": "Londres",
+      "pais": "Reino Unido",
+      "restaurantes": [
+        {
+          "descripcion": "Restaurante con tres estrellas Michelin en Bray, Berkshire.",
+          "id": "restaurante3",
+          "imagen": "https://axwwgrkdco.cloudimg.io/v7/__gmpics__/be8a0c7ff8a94094a559d3cc0b037ddc",
+          "nombre": "The Fat Duck",
+          "precioEstimado": 250,
+          "tipoComida": "Británica Moderna",
+          "ubicacion": "Bray, Berkshire"
+        }
+      ],
+      "ubicacion": "Londres, Reino Unido"
+    },
+    {
+      "atracciones": [
+        {
+          "categorias": [
+            "historia",
+            "monumento"
+          ],
+          "descripcion": "Escultura colossal neoclásica en la bahía de Nueva York.",
+          "id": "atraccion4",
+          "imagen": "https://cdn.unotv.com/images/2023/06/getty-images-la-estatua-de-la-libertad-131538.jpg",
+          "nombre": "Estatua de la Libertad",
+          "precioEstimado": 20,
+          "ubicacion": "Nueva York, Estados Unidos"
+        }
+      ],
+      "ciudad": "Nueva York",
+      "descripcion": "Ciudad que nunca duerme, llena de energía y oportunidades.",
+      "eventos": [
+        {
+          "categorias": [
+            "tradición",
+            "desfile"
+          ],
+          "descripcion": "Desfile anual en la ciudad de Nueva York.",
+          "fecha": "2024-11-28",
+          "hora": "09:00",
+          "id": "evento4",
+          "imagen": "https://st1.uvnimg.com/ad/51/afc98aa54a938571c2784c372b34/desfile-accion-de-gracias-thanksgiving-macys-3.jpg",
+          "nombre": "Desfile del Día de Acción de Gracias de Macy's",
+          "precioEstimado": 0,
+          "ubicacion": "Nueva York, Estados Unidos"
+        }
+      ],
+      "id": "destino4",
+      "imagen": "https://i.natgeofe.com/k/5b396b5e-59e7-43a6-9448-708125549aa1/new-york-statue-of-liberty_2x1.jpg",
+      "nombre": "Nueva York",
+      "pais": "Estados Unidos",
+      "restaurantes": [
+        {
+          "descripcion": "Restaurante con tres estrellas Michelin en Nueva York.",
+          "id": "restaurante4",
+          "imagen": "https://media.architecturaldigest.com/photos/59d7d4ee9033bd1d685599cf/16:9/w_2560%2Cc_limit/untitled-225-Pano.jpg",
+          "nombre": "Eleven Madison Park",
+          "precioEstimado": 180,
+          "tipoComida": "Americana Moderna",
+          "ubicacion": "Nueva York, Estados Unidos"
+        }
+      ],
+      "ubicacion": "Nueva York, Estados Unidos"
+    },
+    {
+      "atracciones": [
+        {
+          "categorias": [
+            "cine",
+            "celebridades"
+          ],
+          "descripcion": "Acera a lo largo de 15 cuadras con estrellas incrustadas.",
+          "id": "atraccion5",
+          "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Hollywood_Walk_of_Fame.jpg/800px-Hollywood_Walk_of_Fame.jpg",
+          "nombre": "Paseo de la Fama de Hollywood",
+          "precioEstimado": 0,
+          "ubicacion": "Los Ángeles, Estados Unidos"
+        }
+      ],
+      "ciudad": "Los Ángeles",
+      "descripcion": "Ciudad del entretenimiento y la cultura californiana.",
+      "eventos": [
+        {
+          "categorias": [
+            "cine",
+            "festival"
+          ],
+          "descripcion": "Festival de cine independiente en Park City, Utah.",
+          "fecha": "2024-01-19",
+          "hora": "11:00",
+          "id": "evento5",
+          "imagen": "https://deadline.com/wp-content/uploads/2023/12/sundance-1.jpg",
+          "nombre": "Festival de Cine de Sundance",
+          "precioEstimado": 50,
+          "ubicacion": "Park City, Utah"
+        }
+      ],
+      "id": "destino5",
+      "imagen": "https://a.cdn-hotels.com/gdcs/production14/d1087/59523f11-21cb-4a60-8d14-c61ccac2da6e.jpg",
+      "nombre": "Los Ángeles",
+      "pais": "Estados Unidos",
+      "restaurantes": [
+        {
+          "descripcion": "Restaurante de Wolfgang Puck en Los Ángeles.",
+          "id": "restaurante5",
+          "imagen": "https://images.otstatic.com/prod/25604999/1/huge.jpg",
+          "nombre": "Spago",
+          "precioEstimado": 120,
+          "tipoComida": "Californiana",
+          "ubicacion": "Los Ángeles, Estados Unidos"
+        }
+      ],
+      "ubicacion": "Los Ángeles, Estados Unidos"
+    },
+    {
+      "atracciones": [
+        {
+          "categorias": [
+            "arquitectura",
+            "puente"
+          ],
+          "descripcion": "Puente colgante que cruza el estrecho Golden Gate.",
+          "id": "atraccion6",
+          "imagen": "https://colombianabroad.com/wp-content/uploads/puente-golden-gate-spencer-noche.jpg",
+          "nombre": "Puente Golden Gate",
+          "precioEstimado": 0,
+          "ubicacion": "San Francisco, Estados Unidos"
+        }
+      ],
+      "ciudad": "San Francisco",
+      "descripcion": "Ciudad innovadora con encanto victoriano y vistas impresionantes.",
+      "eventos": [
+        {
+          "categorias": [
+            "música",
+            "festival"
+          ],
+          "descripcion": "Festival de música en el Golden Gate Park.",
+          "fecha": "2024-08-09",
+          "hora": "12:00",
+          "id": "evento6",
+          "imagen": "https://sfoutsidelands.com/img/containers/assets/images/outsidelands2021_1030_205445-8590_alivecoverage-1681405713.jpg/f1b49a672168b26bd339bb3a8ce798d9.jpg",
+          "nombre": "Festival de Música Outside Lands",
+          "precioEstimado": 299,
+          "ubicacion": "San Francisco, Estados Unidos"
+        }
+      ],
+      "id": "destino6",
+      "imagen": "https://content.r9cdn.net/rimg/dimg/69/1b/cca1e76b-city-13852-1633ad11236.jpg?width=1366&height=768&xhint=1966&yhint=1018&crop=true",
+      "nombre": "San Francisco",
+      "pais": "Estados Unidos",
+      "restaurantes": [
+        {
+          "descripcion": "Restaurante con tres estrellas Michelin en San Francisco.",
+          "id": "restaurante6",
+          "imagen": "https://cdn.vox-cdn.com/thumbor/rXm1E2JN6TLFDkOUSfL0mXGh2Po=/0x167:2000x1167/fit-in/1200x600/cdn2.vox-cdn.com/uploads/chorus_asset/file/8407759/AtelierCrenn_PChang_2363.jpg",
+          "nombre": "Atelier Crenn",
+          "precioEstimado": 280,
+          "tipoComida": "Francesa Moderna",
+          "ubicacion": "San Francisco, Estados Unidos"
+        }
+      ],
+      "ubicacion": "San Francisco, Estados Unidos"
+    }
+  ]
+}

@@ -17,7 +17,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".Bienvenida"
+            android:name="logica.Bienvenida"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,43 +26,43 @@
         </activity>
 
         <activity
-            android:name=".IniciarSesion"
+            android:name="logica.IniciarSesion"
             android:exported="false" />
 
         <activity
-            android:name=".CrearCuenta"
+            android:name="logica.CrearCuenta"
             android:exported="false" />
 
         <activity
-            android:name=".Inicio"
+            android:name="logica.Inicio"
             android:exported="false" />
 
         <activity
-            android:name=".Explorar"
+            android:name="logica.Explorar"
             android:exported="false" />
 
         <activity
-            android:name=".Itinerario"
+            android:name="logica.Itinerario"
             android:exported="false" />
 
         <activity
-            android:name=".Cuenta"
+            android:name="logica.Cuenta"
             android:exported="false" />
 
         <activity
-            android:name=".Favoritos"
+            android:name="logica.Favoritos"
             android:exported="false" />
 
         <activity
-            android:name=".Destino"
+            android:name="logica.Destino"
             android:exported="false" />
 
         <activity
-            android:name=".DatoDestino"
+            android:name="datos.DatoDestino"
             android:exported="false" />
 
         <activity
-            android:name=".Detalles"
+            android:name="logica.Detalles"
             android:exported="false" />
     </application>
 
