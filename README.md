@@ -7,4 +7,4 @@ Con una interfaz intuitiva y funciones robustas.
 
 Documento de FIGMA: https://www.figma.com/design/p1yLoy1YZgtj8YeexSacaa/DestiMap?node-id=0%3A1&t=Ip3q0Bsmx7apEgqB-1
 
-Diagrama de Clases: https://drive.google.com/file/d/1Gp8XnezQgLwLNg2d01dk3aW2-v_lVKC3/view?usp=sharing
+Diagrama de Clases: https://drive.google.com/file/d/1c2QzSf5X8GFdQhTsVYw4UZkDRg3HrJhx/view?usp=drive_link
